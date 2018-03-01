@@ -1,12 +1,28 @@
-import React, { Component } from 'react'
-import './styles/Button.css'
+import React, {Component} from 'react';
+import './styles/Button.css';
 
-export default class Button extends Component {
+class Button extends Component{
+  state = {
+    click: false
+  }
+
+changeColor(){
+    this.setState(state=>({click: !state.click}))
+}
+
+
   render() {
-    return (
-      <button>
-        React
-      </button>
+  let coco = `btn-logo ${this.state.click ? 'abacaxi' : ''}`    
+    console.log(this.state.click)
+    return ( 
+      <div>
+        <button>
+          busy
+        </button>
+      </div>
     )
   }
 }
+
+
+export default Button;
