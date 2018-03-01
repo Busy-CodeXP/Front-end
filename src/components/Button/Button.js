@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import './styles/Button.css';
+import './styles/Button.scss';
 
 class Button extends Component{
   state = {
@@ -17,7 +17,7 @@ changeColor(){
     return ( 
       <div>
         <button className={coco} onClick={() => this.changeColor()}>
-          busy
+          BUSY
         </button>
       </div>
     )
