@@ -16,7 +16,7 @@ changeColor(){
     console.log(this.state.click)
     return ( 
       <div>
-        <button>
+        <button className={coco} onClick={() => this.changeColor()}>
           busy
         </button>
       </div>
