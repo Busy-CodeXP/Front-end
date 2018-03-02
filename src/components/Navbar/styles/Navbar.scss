@@ -1,0 +1,33 @@
+$blue:#028cc0;
+$lightBlue:#3dbae5;
+
+.Navbar{
+  
+  &-list{
+    display: flex;
+    list-style-type: none;
+
+    
+    li{
+
+      a{
+        text-decoration: none;
+        color: $blue;
+        padding: 10px 20px;
+        transition: .3s;
+        
+      }
+
+      a:hover{
+        color:$lightBlue;
+      }
+
+      a:after{
+        content: '';
+        height: 2px;
+        background: $lightBlue;
+      }
+    }
+  }
+
+}
