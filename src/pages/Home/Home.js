@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import Header from '../../components/Header';
+import Hero from '../../components/Hero';
+import './styles/Home.scss';
 
 class Home extends Component {
   render() {
     return (
-        <Header/>
+        <Hero/>
     );
   }
 }
