@@ -1,13 +1,12 @@
-import React, { Component } from 'react';
-import './styles/Logo.scss';
-import Logo from '../../images/busyLogo.svg';
+import React from 'react';
 
-class BusyLogo extends Component {
-    render() {
+import Logo from '../../images/busyLogo.svg';
+import './styles/Logo.scss';
+
+const BusyLogo = () => {
         return (
             <img src={Logo} className='BusyLogo' />
         )
-    }
 }
 
 export default BusyLogo
