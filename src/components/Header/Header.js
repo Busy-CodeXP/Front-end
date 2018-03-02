@@ -1,12 +1,18 @@
-import React, {Component} from 'react';
-import './styles/Header.scss';
-import Logo from '../../components/Logo'
+import React, { Component } from 'react';
 
-class Header extends Component{
-    render(){
-        return(
+import Logo from '../../components/Logo'
+import Navbar from '../../components/Navbar';
+import './styles/Header.scss';
+
+class Header extends Component {
+    render() {
+        return (
             <header className='Header'>
-                <Logo/>
+                <div className='Logo-container'>
+                    <Logo />
+                    <h1>BUSY</h1>
+                </div>
+                <Navbar />
             </header>
         )
     }
