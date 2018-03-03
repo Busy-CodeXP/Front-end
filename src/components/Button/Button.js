@@ -1,28 +1,31 @@
-import React, {Component} from 'react';
-import './styles/Button.scss';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-class Button extends Component{
-  state = {
-    click: false
+import './styles/Button.scss'
+
+function Button(props) {
+  const { href, children, className, ...otherProps } = props;
+  const classes = `Button ${className}`;
+
+  if (href) {
+    return (
+      <Link {...otherProps} to={href} className={classes}>
+        { children }
+      </Link>
+    );
   }
 
-changeColor(){
-    this.setState(state=>({click: !state.click}))
+  return (
+    <button {...otherProps} className={classes}>
+      { children }
+    </button>
+  )
 }
 
 
-  render() {
-  let coco = `btn-logo ${this.state.click ? 'abacaxi' : ''}`    
-    console.log(this.state.click)
-    return ( 
-      <div>
-        <button className={coco} onClick={() => this.changeColor()}>
-          BUSY
-        </button>
-      </div>
-    )
-  }
+Button.defaultProps = {
+  href: '',
+  className: '',
 }
-
 
 export default Button;
