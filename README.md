@@ -1,12 +1,31 @@
-# Busy front-end
-> No nosso site você poderá ver links para download do aplicativo e dashboard com dados sobre a lotação dos ônibus.
+<h1 align="center">
+  <br>
+  <a href="https://github.com/Busy-CodeXP/Front-end"><img src="https://raw.githubusercontent.com/Busy-CodeXP/Front-end/master/src/images/busyLogo.png" alt="Busy" width="200"></a>
+  <br>
+  Busy
+  <br>
+</h1>
 
+<h4 align="center">Mude a forma de se transportar de ônibus em São Paulo, otimize suas rotas e tenha mais conforto. <br/>
+No nosso site você poderá ver links para download do aplicativo e dashboard com dados sobre a lotação dos ônibus.
+</h4>
+
+
+<p align="center">
+  <a href="#key-features">Demonstração</a> •
+  <a href="#how-to-use">Telas</a> •
+  <a href="#download">Ambiente de desenvolvimento</a> •
+  <a href="#credits">Estrutura do projeto</a> •
+  <a href="#%EF%B8%8F-configura%C3%A7%C3%B5es">Configurações</a> •
+  <a href="#-notas">Notas</a>•
+  <a href="#-time">Time</a>
+</p>
 Um ou dois parágrafos sobre o seu produto e o que ele faz.
 
-## 🎮Demonstração
+## 🎮 Demonstração
 ⚠️*EM BREVE*⚠️
 
-## 💻Telas
+## 💻 Telas
 ⚠️*EM BREVE*⚠️
 	
 ## ⚛️ Configuração do ambiente de  desenvolvimento
@@ -26,7 +45,7 @@ $ npm install
 # Rode o projeto localmente 
 $ npm start
 ```
-## 📁Estrutura do projeto
+## 📁 Estrutura do projeto
 As pastas seguem o seguinte padrão.
 ```
 /Fron-end
@@ -65,7 +84,7 @@ O projeto foi criado a partir do [Create React App](https://github.com/facebooki
 ## 📝 Notas
 O projeto foi criado a partir da proposta do trabalho de conclusão de curso na [Escola SENAI de Informática](https://informatica.sp.senai.br/) durante o curso CODE-XP.
 
-## 👊Time
+## 👊 Time
 
 
 lupy100             |  ggalli
