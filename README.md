@@ -11,16 +11,21 @@ Um ou dois parágrafos sobre o seu produto e o que ele faz.
 	
 ## ⚛️ Configuração do ambiente de  desenvolvimento
 ### Requisitos
-É necessário ter o [Node.js](https://nodejs.org/en/) instalado 
-Para acessar a pasta do projeto entre no prompt de comando e digite:
->cd \<Nome da pasta onde você fez o clone do projeto> 
->cd Front-end
->
-Após entrar na pasta do projeto rode os comandos:
-> npm install ou yarn install //Para instalar as dependências
-> npm start ou yarn start     //Para rodar o projeto localmente 
-> npm build ou yarn build    //Para criar um build do projeto
+É necessário ter o Node.js instalado 
+Para testar o projeto entre no prompt de comando e digite:
+```bash
+# Clone nosso repositório
+$ git clone https://github.com/Busy-CodeXP/Front-end.git
 
+# Entre na pasta do repositório
+$ cd Front-end
+
+# Instale as dependências
+$ npm install
+
+# Rode o projeto localmente 
+$ npm start
+```
 ## 📁Estrutura do projeto
 As pastas seguem o seguinte padrão.
 ```
@@ -33,21 +38,21 @@ As pastas seguem o seguinte padrão.
     favicon.ico
   /src
     /components
-	  /Button
-	    /styles
-		  Button.scss
-	    Button.js
-		index.js		
+      /Button
+        /styles
+          Button.scss
+        Button.js
+	index.js		
   /images
     logo.svg
   /pages
     /Home
-	    /styles
-		  Home.scss
-	    Home.js
-		index.js
+      /styles
+        Home.scss
+      Home.js
+      index.js
   App.js
-  index.js```
+  index.js
 ```
 
 ## ⚙️ Configurações
