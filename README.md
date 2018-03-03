@@ -89,5 +89,5 @@ O projeto foi criado a partir da proposta do trabalho de conclusão de curso na 
 
 lupy100             |  ggalli
 :-------------------------:|:-------------------------:
-[<img src="https://github.com/lupy100.png" width="130px;"/><br /><sub>João Matheus</sub>](https://github.com/lupy100)<br /> <sub>Desenvolvedor Web</sub>  |  [<img src="https://github.com/ggalli.png" width="130px;"/><br /><sub>Guilherme Galli</sub>](https://github.com/lupy100)<br /> <sub>Desenvolvedor Web</sub>
+[<img src="https://github.com/lupy100.png" width="130px;"/><br /><sub>João Matheus</sub>](https://github.com/lupy100)<br /> <sub>Desenvolvedor Web</sub>  |  [<img src="https://github.com/ggalli.png" width="130px;"/><br /><sub>Guilherme Galli</sub>](https://github.com/ggalli)<br /> <sub>Desenvolvedor Web</sub>
 
