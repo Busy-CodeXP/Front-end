@@ -12,10 +12,10 @@ No nosso site você poderá ver links para download do aplicativo e dashboard co
 
 
 <p align="center">
-  <a href="#key-features">Demonstração</a> •
-  <a href="#how-to-use">Telas</a> •
-  <a href="#download">Ambiente de desenvolvimento</a> •
-  <a href="#credits">Estrutura do projeto</a> •
+  <a href="#-demonstra%C3%A7%C3%A3o">Demonstração</a> •
+  <a href="#-telas">Telas</a> •
+  <a href="#%EF%B8%8F-configura%C3%A7%C3%A3o-do-ambiente-de--desenvolvimento">Ambiente de desenvolvimento</a> •
+  <a href="#-estrutura-do-projeto">Estrutura do projeto</a> •
   <a href="#%EF%B8%8F-configura%C3%A7%C3%B5es">Configurações</a> •
   <a href="#-notas">Notas</a>•
   <a href="#-time">Time</a>
