@@ -1,5 +1,5 @@
 .Header{
-  border-bottom: 1px solid #3dbae5;
+  border-bottom: 1px solid rgba(255,255,255,.2);
   padding: 10px 100px;
   display: flex;
   justify-content: space-between;
@@ -11,7 +11,7 @@
 
 
     h1{
-      color: #028cc0;
+      color: #fff;
       margin-left: 10px
     }
   }
