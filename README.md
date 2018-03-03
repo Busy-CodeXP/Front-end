@@ -20,7 +20,6 @@ No nosso site você poderá ver links para download do aplicativo e dashboard co
   <a href="#-notas">Notas</a>•
   <a href="#-time">Time</a>
 </p>
-Um ou dois parágrafos sobre o seu produto e o que ele faz.
 
 ## 🎮 Demonstração
 ⚠️*EM BREVE*⚠️
@@ -82,7 +81,7 @@ O projeto foi criado a partir do [Create React App](https://github.com/facebooki
  - [sass-loader](https://github.com/webpack-contrib/sass-loader)
 
 ## 📝 Notas
-O projeto foi criado a partir da proposta do trabalho de conclusão de curso na [Escola SENAI de Informática](https://informatica.sp.senai.br/) durante o curso CODE-XP.
+O projeto foi criado a partir da proposta do trabalho de conclusão de curso na [Escola SENAI de Informática](https://informatica.sp.senai.br/) durante o CODE-XP.
 
 ## 👊 Time
 
