@@ -11,16 +11,30 @@ class Hero extends Component {
       <section className='Hero'>
         <Header />
 
-        <Button className='default'>
-          <DownloadIcon fill='#FFF' /> Download
-        </Button>
+        <div className="slogan-container">
+          <div className="slogan">
+            <h1 className="title">Busy</h1>
+            <h2 className="subTitle">Mais comodidade às suas viagens</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac arcu id ante sagittis semper. Suspendisse aliquet, nisi quis iaculis iaculis, est velit porttitor justo, ut blandit est felis dignissim velit.</p>
 
-        <Button>LEARN MORE</Button>
+            <div className="buttons">
+              <Button className='default'>
+                <DownloadIcon fill='#FFF' /> DOWNLOAD
+            </Button>
 
-        <Button className="about">
+              <Button>LEARN MORE</Button>
+            </div>
+          </div>
+
+          <img src="http://via.placeholder.com/300x500" />
+          
+        </div>
+
+
+        {/* <Button className="about">
           <AndroidIcon fill="#FFF" />
           Available on the <br /> Google Play
-        </Button>
+        </Button> */}
 
       </section>
     )

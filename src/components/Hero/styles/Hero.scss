@@ -1,4 +1,36 @@
 .Hero{
-  height: 500px;
   background:linear-gradient(to bottom right, #5f3fff, #8DDEFF);
+
+  .slogan-container{
+    padding: 30px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+  }
+
+  .slogan{
+    width: 400px;
+    color: #fff;
+    display: inline-block;
+
+    .title{
+      font-size: 70px;
+      margin: 0;
+    }
+
+    .subTitle{
+      margin: 0;
+      font-weight: normal;
+    }
+
+    p{
+      font-size: 13px;
+      line-height: 1.5
+    }
+
+    .buttons{
+      display: flex;
+      margin-top: 40px;
+    }
+  }
 }
