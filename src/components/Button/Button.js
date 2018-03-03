@@ -1,12 +1,31 @@
-import React, { Component } from 'react'
-import './styles/Button.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-export default class Button extends Component {
-  render() {
+import './styles/Button.scss'
+
+function Button(props) {
+  const { href, children, className, ...otherProps } = props;
+  const classes = `Button ${className}`;
+
+  if (href) {
     return (
-      <button>
-        React
-      </button>
-    )
+      <Link {...otherProps} to={href} className={classes}>
+        { children }
+      </Link>
+    );
   }
+
+  return (
+    <button {...otherProps} className={classes}>
+      { children }
+    </button>
+  )
 }
+
+
+Button.defaultProps = {
+  href: '',
+  className: '',
+}
+
+export default Button;
