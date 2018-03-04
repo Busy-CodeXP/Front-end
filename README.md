@@ -79,7 +79,11 @@ O projeto foi criado a partir do [Create React App](https://github.com/facebooki
  Durante o desenvolvimento o [Yarn](https://yarnpkg.com/pt-BR/)  fui escolhido como gerenciador e os pacotes instalados foram:
  - [react-router-dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)
  - [sass-loader](https://github.com/webpack-contrib/sass-loader)
-
+### Padrões dos componentes 
+ A estrutura dos componentes foram escritos seguindo os artigos:
+ - [Airbnb JavaScript](https://github.com/airbnb/javascript)
+ - [Best Practices for Writing React Components](https://engineering.musefind.com/our-best-practices-for-writing-react-components-dec3eb5c3fc8)
+ 
 ## 📝 Notas
 O projeto foi criado a partir da proposta do trabalho de conclusão de curso na [Escola SENAI de Informática](https://informatica.sp.senai.br/) durante o CODE-XP.
 
