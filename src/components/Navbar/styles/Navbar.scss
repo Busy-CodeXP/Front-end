@@ -1,20 +1,49 @@
 $blue:#028cc0;
 $lightBlue:#8DDEFF;
 
+
+.scroll{
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
 .Navbar{
+
+  svg{
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    cursor: pointer;
+    position: relative;
+    z-index: 100;
+    
+  }
   
   &-list{
-    display: flex;
     list-style-type: none;
-
+    width: 170px;
+    margin: 0;
+    margin-right: -170px;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    height: 100%;
+    transition: .5s;
+    text-align: right;
+    background: linear-gradient(to bottom, #0893c3, #8ddeff);
+    padding: 0;    
+    padding-top: 100px;
     
     li{
 
       a{
         text-decoration: none;
         color: #fff;
-        padding: 10px 20px;
         transition: .3s;
+        display: block;
+        padding: 20px;
         
       }
 
@@ -24,4 +53,11 @@ $lightBlue:#8DDEFF;
     }
   }
 
+}
+
+.menuActive{
+  .Navbar-list{
+    margin: 0;
+
+  }
 }
