@@ -4,12 +4,11 @@ import './styles/Title.scss';
 
 
 function Title(props) {
-  const {children, className} = props;
-  const classes = 'Title';
+  const {title, className} = props;
 
   return (
-    <h1 className={classes}>
-      { children }
+    <h1 className={className}>
+      { title }
       <hr/>
     </h1>
   )
@@ -17,8 +16,7 @@ function Title(props) {
 
 
 Title.defaultProps = {
-  href: '',
-  className: '',
+  className: 'Title',
 }
 
 export default Title;
