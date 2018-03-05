@@ -1,18 +1,7 @@
 .Features{
   padding: 20px 5%;
-
-  .Feature-box{
-    text-align: center;
-    padding: 30px;
-
-    h3{
-      color: #5f3fff;
-      font-size: 16px;
-    }
-
-    p{
-      font-size: 13px;
-      line-height: 1.5
-    }
+  &-cards{
+    display: flex;
+    justify-content: center
   }
 }

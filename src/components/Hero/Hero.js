@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import Button from '../Button';
 import Header from '../Header';
-import DownloadIcon, { AndroidIcon } from './../Icon';
+import DownloadIcon from './../Icon';
 import './styles/Hero.scss';
 
 class Hero extends Component {
@@ -20,14 +20,14 @@ class Hero extends Component {
             <div className="buttons">
               <Button className='default'>
                 <DownloadIcon fill='#FFF' /> DOWNLOAD
-            </Button>
+              </Button>
 
               <Button>LEARN MORE</Button>
             </div>
           </div>
 
-          <img src="http://via.placeholder.com/300x500" />
-          
+          <img src="http://via.placeholder.com/300x500" alt='' />
+
         </div>
 
 
