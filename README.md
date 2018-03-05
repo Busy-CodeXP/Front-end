@@ -29,7 +29,8 @@ No nosso site você poderá ver links para download do aplicativo e dashboard co
 	
 ## ⚛️ Configuração do ambiente de  desenvolvimento
 ### Requisitos
-É necessário ter o Node.js instalado 
+É necessário ter o [Node.js](https://nodejs.org/en/) instalado 
+
 Para testar o projeto entre no prompt de comando e digite:
 ```bash
 # Clone nosso repositório
