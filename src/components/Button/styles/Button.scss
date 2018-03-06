@@ -2,9 +2,9 @@
 
 .Button {
   background-color: transparent;
-  border: 1px solid #FFF;
+  border: 2px solid #FFF;
   border-radius: 3em;
-  color:#FFF ;
+  color:#fff ;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -27,8 +27,8 @@
       margin-right: 5px
     }
   }
-  &.about{
-    border-color: aqua;
+  &.googlePlay{
+    border-color: #8ddeff;
     text-align: start;
     svg{
       margin-right: 5px;

@@ -30,12 +30,6 @@ class Hero extends Component {
 
         </div>
 
-
-        {/* <Button className="about">
-          <AndroidIcon fill="#FFF" />
-          Available on the <br /> Google Play
-        </Button> */}
-
       </section>
     )
   }
