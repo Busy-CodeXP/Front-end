@@ -2,6 +2,7 @@
   padding: 20px 5%;
   &-cards{
     display: flex;
-    justify-content: center
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
