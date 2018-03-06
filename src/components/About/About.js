@@ -10,9 +10,7 @@ class About extends Component{
   render(){
     return(
       <section className='About'>
-        <Title>
-          Sobre
-        </Title>
+        <Title title='Sobre'/>
 
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu justo libero. Vivamus imperdiet erat lectus, sed sodales metus interdum blandit. Proin et tortor vitae mi mollis ultrices nec vitae magna. Phasellus et ultrices nulla. Proin eget massa non libero rhoncus mattis sed vitae ipsum. Praesent commodo neque non lacus tempor, quis posuere mi dignissim. Vivamus non ultricies lectus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Integer sed tempor metus. Fusce sit amet turpis purus.
