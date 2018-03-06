@@ -1,20 +1,32 @@
 import React, { Component } from 'react';
 
+import Title from '../Title';
+import Card from '../Card';
 import './styles/Features.scss'
-import Title from '../Title/Title';
 
-class Features extends Component{
-  render(){
-    return(
+class Features extends Component {
+  render() {
+    return (
       <section className='Features'>
-        <Title>
-          Funcionalidades
-        </Title>
 
-        <div className="Feature-box">
-          <img src="http://via.placeholder.com/130x130" alt=""/>
-          <h3>Lorem ipsum dolor</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor.</p>
+        <Title title="Funcionalidades" />
+      
+        <div className="Features-cards">
+          <Card
+            title="Lorem ipsum dolor"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
+            image="http://via.placeholder.com/130x130"
+          />
+          <Card
+            title="Lorem ipsum dolor"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
+            image="http://via.placeholder.com/130x130"
+          />
+          <Card
+            title="Lorem ipsum dolor"
+            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
+            image="http://via.placeholder.com/130x130"
+          />
         </div>
       </section>
     )
