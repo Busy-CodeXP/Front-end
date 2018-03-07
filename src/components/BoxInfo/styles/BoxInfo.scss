@@ -1,4 +1,11 @@
 .BoxInfo{
+  width: 70%;
+  margin: 10px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px 1px #aaa;
+  display: flex;
+  justify-content: space-between;
+
 
   h3{
 
@@ -6,5 +13,13 @@
 
   .progressBar{
     
+  }
+
+  p{
+    font-size: 30px;
+
+    span{
+      font-size: 18px;
+    }
   }
 }

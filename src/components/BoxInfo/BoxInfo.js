@@ -7,7 +7,7 @@ const BoxInfo = ({title,count}) => {
     <div className="BoxInfo">
       <h3>{title}</h3>
       <div className='progressBar'></div>
-      <p>{count}</p>
+      <p>{count}<span>%</span></p>
     </div>
   );
 };
