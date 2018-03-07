@@ -1,18 +1,41 @@
 import React, { Component, Fragment } from 'react';
-import './styles/Dashboard.scss';
+
+
 import BoxInfo from '../../components/BoxInfo/BoxInfo';
+import Header from '../../components/Header';
+import BusInfo from '../../components/BusInfo/BusInfo';
+import GoogleMaps from '../../components/GoogleMaps/GoogleMaps';
+import './styles/Dashboard.scss';
 
 
 class Dashboard extends Component {
   render() {
     return (
-      <Fragment>        
+      <Fragment>
+        <Header background='#0893C3'/>
+
+        <BusInfo
+          linha='1234-10'
+          trajeto='TERM. JD. BOLADO / JD. OSASCO'
+        />
+
         <section className='Dashboard-BoxInfo'>
           <BoxInfo
             title='TÍTULO'
             count='10'
           />
+          <BoxInfo
+            title='TÍTULO'
+            count='50'
+          />
+          <BoxInfo
+            title='TÍTULO'
+            count='100'
+          />
         </section>
+
+        <GoogleMaps/>
+        
       </Fragment>
     );
   }

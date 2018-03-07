@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
 
 import './styles/Navbar.scss';
 
@@ -31,11 +30,7 @@ class Navbar extends Component {
                 </svg>
 
                 <ul className='Navbar-list'>
-                    <li><Link to='#'>Home</Link></li>
-                    <li><Link to='#'>Sobre</Link></li>                    
-                    <li><Link to='#'>Funcionalidades</Link></li>
-                    <li><Link to='#'>Download</Link></li>
-                    <li><Link to='#'>Contato</Link></li>
+                    {this.props.children}
                 </ul>
             </nav>
         )

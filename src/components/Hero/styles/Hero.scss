@@ -1,11 +1,12 @@
 .Hero{
-  background:linear-gradient(to bottom right, #5f3fff, #8DDEFF);
+  background:linear-gradient(to bottom right, #5f3fff, #8DDEFF);  
 
   .slogan-container{
     padding: 50px 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 
     img{
       display: none;
@@ -14,22 +15,27 @@
 
   .slogan{
     width: 400px;
-    color: #fff;
     display: inline-block;
 
     .title{
       font-size: 70px;
       margin: 0;
+      color: #fff;
+      
     }
 
     .subTitle{
       margin: 0;
       font-weight: normal;
+      color: #fff;
+      
     }
 
     p{
       font-size: 13px;
-      line-height: 1.5
+      line-height: 1.5;
+      color: #fff;
+      
     }
 
     .buttons{

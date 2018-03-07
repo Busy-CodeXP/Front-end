@@ -9,7 +9,7 @@ class Hero extends Component {
   render() {
     return (
       <section className='Hero'>
-        <Header/>
+        <Header logo/>
 
         <div className="slogan-container">
           <div className="slogan">
