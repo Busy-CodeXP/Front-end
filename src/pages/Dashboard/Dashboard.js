@@ -9,7 +9,7 @@ class Dashboard extends Component {
       <Fragment>        
         <section className='Dashboard-BoxInfo'>
           <BoxInfo
-            title='Título'
+            title='TÍTULO'
             count='10'
           />
         </section>

@@ -1,4 +1,5 @@
 import React from 'react';
+import './styles/ProgressBar.scss'
 
 
 const ProgressBar = ({color, completed, height, className, children, ...rest}) => {
