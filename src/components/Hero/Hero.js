@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Button from '../Button';
 import Header from '../Header';
+import { NavbarList } from '../Navbar'
 import DownloadIcon from './../Icon';
 import './styles/Hero.scss';
 
@@ -9,7 +10,13 @@ class Hero extends Component {
   render() {
     return (
       <section className='Hero'>
-        <Header logo/>
+        <Header titleLogo='BUSY'>
+          <NavbarList link='#'>Home</NavbarList>
+          <NavbarList link='#'>Sobre</NavbarList>
+          <NavbarList link='#'>Funcionalidades</NavbarList>
+          <NavbarList link='#'>Download</NavbarList>
+          <NavbarList link='#'>Contato</NavbarList>
+        </Header>
 
         <div className="slogan-container">
           <div className="slogan">
