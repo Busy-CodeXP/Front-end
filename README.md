@@ -80,6 +80,7 @@ O projeto foi criado a partir do [Create React App](https://github.com/facebooki
  Durante o desenvolvimento o [Yarn](https://yarnpkg.com/pt-BR/)  fui escolhido como gerenciador e os pacotes instalados foram:
  - [react-router-dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)
  - [sass-loader](https://github.com/webpack-contrib/sass-loader)
+ - [react-google-maps](https://github.com/tomchentw/react-google-maps)
 ### Padrões dos componentes 
  A estrutura dos componentes foram escritos seguindo os artigos:
  - [Airbnb JavaScript](https://github.com/airbnb/javascript)
