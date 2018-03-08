@@ -12,7 +12,8 @@ class Dashboard extends Component {
   render() {
     return (
       <Fragment>
-        <Header background='#0893C3'/>
+        <Header background='#0893C3'>
+        </Header>
 
         <BusInfo
           linha='1234-10'
