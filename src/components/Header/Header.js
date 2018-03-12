@@ -12,7 +12,7 @@ class Header extends Component {
       }
     }
 
-    const {titleLogo,children} = this.props
+    const { titleLogo, children, burger } = this.props
     return (
       <header className='Header' style={styles.bgColor}>
         {titleLogo ?
@@ -24,7 +24,7 @@ class Header extends Component {
             <Logo />
           </div>
         }
-        <Navbar>
+        <Navbar navImage={burger}>
           {children}
         </Navbar>
       </header>
