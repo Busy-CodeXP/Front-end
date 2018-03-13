@@ -6,6 +6,7 @@ import Header from '../../components/Header';
 import BusInfo from '../../components/BusInfo/BusInfo';
 import GoogleMaps from '../../components/GoogleMaps/GoogleMaps';
 import './styles/Dashboard.scss';
+import {NavbarList} from '../../components/Navbar';
 
 
 class Dashboard extends Component {
@@ -20,6 +21,18 @@ class Dashboard extends Component {
     return (
       <Fragment>
         <Header background='#0893C3' burger={nav}>
+          <NavbarList className='list-item-bus'>
+            <p>1234-10</p>
+            <p>TERM. JD. BOLADO / JD. OSASCO</p>
+          </NavbarList>          
+          <NavbarList className='list-item-bus'>
+            <p>1234-10</p>
+            <p>TERM. JD. BOLADO / JD. OSASCO</p>
+          </NavbarList>          
+          <NavbarList className='list-item-bus'>
+            <p>1234-10</p>
+            <p>TERM. JD. BOLADO / JD. OSASCO</p>
+          </NavbarList>          
         </Header>
 
         <BusInfo
