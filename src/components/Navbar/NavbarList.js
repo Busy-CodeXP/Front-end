@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
 
-const NavbarList = ({ children, link }) => {
+const NavbarList = ({ children, link, className }) => {
   if (link) {
     return (
-      <li>
+      <li className={className}>
         <Link to={link}>
           {children}
         </Link>
@@ -12,7 +12,7 @@ const NavbarList = ({ children, link }) => {
     );
   } else {
     return (
-      <li>
+      <li className={className}>
         {children}
       </li>
     );
