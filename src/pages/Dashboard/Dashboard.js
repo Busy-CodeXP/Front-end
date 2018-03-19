@@ -7,9 +7,27 @@ import BusInfo from '../../components/BusInfo/BusInfo';
 import GoogleMaps from '../../components/GoogleMaps/GoogleMaps';
 import './styles/Dashboard.scss';
 import {NavbarList} from '../../components/Navbar';
+import Axios from 'axios';
 
 
 class Dashboard extends Component {
+ 
+
+  componentDidMount(){
+    this.getBus();
+  }
+
+  getBus(){
+    return Axios.get('http://e561fa46.ngrok.io/api/olhovivo/posicao')
+    .then((response) => {
+      console.log(response);
+    })
+    .catch((error) => {
+      console.log(error);
+    })
+  }
+
+
   render() {
     const nav = <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 485.213 485.213">
     <g>
