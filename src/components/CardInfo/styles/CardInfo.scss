@@ -1,0 +1,37 @@
+.CardInfo{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  border-bottom: 1px solid rgba(255,255,255,.3);
+
+  h3{
+    width: 75%;
+    text-align: right;
+  }
+
+  p{
+    width: 75%;
+    text-align: right !important;
+  }
+
+  img{
+    position: relative;
+    top: -15px
+  }
+  
+  &.inverse{
+    flex-direction: row-reverse;
+
+    h3{
+      text-align: left;
+    }
+
+    p{
+      text-align: left !important;
+    }
+  }
+}
+
