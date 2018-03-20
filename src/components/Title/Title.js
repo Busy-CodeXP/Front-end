@@ -7,10 +7,10 @@ function Title(props) {
   const {title, className} = props;
 
   return (
-    <h1 className={className}>
+    <h2 className={className}>
       { title }
       <hr/>
-    </h1>
+    </h2>
   )
 }
 
