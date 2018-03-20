@@ -1,8 +1,12 @@
 .Features{
   padding: 40px 5%;
-  &-cards{
+  &-BoxFeatures{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .image{
+    display: none;
   }
 }

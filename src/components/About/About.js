@@ -24,6 +24,8 @@ class About extends Component{
           <p>Available on the <br /> <span>Google Play</span></p>
         </Button>
 
+        <img src="http://via.placeholder.com/300x500" alt=""/>
+
       </section>
     )
   }
