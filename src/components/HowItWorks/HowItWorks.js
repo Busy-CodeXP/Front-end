@@ -17,24 +17,27 @@ class HowItWorks extends Component {
         </div>
 
         <div className="HowItWorks-CardInfo">
-           <CardInfo className='CardInfo inverse'
+          <CardInfo
+            inverse='inverse'
             title="Lorem ipsum dolor"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
             image="http://via.placeholder.com/50x50"
           />
-          <CardInfo className='CardInfo inverse'
+          <CardInfo
+            inverse='inverse'
             title="Lorem ipsum dolor"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
             image="http://via.placeholder.com/50x50"
           />
-          <CardInfo className='CardInfo inverse'
+          <CardInfo
+            inverse='inverse' 
             title="Lorem ipsum dolor"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
             image="http://via.placeholder.com/50x50"
           />
         </div>
 
-        <img className='image' src="http://via.placeholder.com/250x500" alt=""/>
+        <img className='image' src="http://via.placeholder.com/350x500" alt="" />
 
       </section>
     )

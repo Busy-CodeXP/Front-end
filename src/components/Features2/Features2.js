@@ -16,17 +16,17 @@ class Features2 extends Component {
         </div>
 
         <div className="Features2-CardInfo">
-          <CardInfo className='CardInfo'
+          <CardInfo
             title="Lorem ipsum dolor"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
             image="http://via.placeholder.com/70x70"
           />
-          <CardInfo className='CardInfo'
+          <CardInfo
             title="Lorem ipsum dolor"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
             image="http://via.placeholder.com/70x70"
           />
-          <CardInfo className='CardInfo'
+          <CardInfo
             title="Lorem ipsum dolor"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
             image="http://via.placeholder.com/70x70"
@@ -34,17 +34,20 @@ class Features2 extends Component {
 
           <img className='image' src="http://via.placeholder.com/250x500" alt=""/>
 
-           <CardInfo className='CardInfo inverse'
+           <CardInfo
+            inverse='inverse'
             title="Lorem ipsum dolor"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
             image="http://via.placeholder.com/70x70"
           />
-          <CardInfo className='CardInfo inverse'
+          <CardInfo
+            inverse='inverse' 
             title="Lorem ipsum dolor"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
             image="http://via.placeholder.com/70x70"
           />
-          <CardInfo className='CardInfo inverse'
+          <CardInfo
+            inverse='inverse'
             title="Lorem ipsum dolor"
             description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
             image="http://via.placeholder.com/70x70"

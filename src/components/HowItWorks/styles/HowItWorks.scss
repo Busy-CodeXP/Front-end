@@ -10,4 +10,17 @@
       margin-bottom: 10px;
     }
   }
+
+  &-CardInfo{
+    .CardInfo{
+      h3, p{
+        width: 80%;
+      }
+    }
+
+  }
+  
+  .image{
+    display: none;
+  }
 }
