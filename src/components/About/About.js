@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 
 import Button from '../Button';
-import DownloadIcon, { AndroidIcon } from './../Icon';
+import { AndroidIcon } from './../Icon';
 import './styles/About.scss'
 import Title from '../Title/Title';
 
