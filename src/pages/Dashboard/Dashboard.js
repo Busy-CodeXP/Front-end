@@ -1,7 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import axios from 'axios';
 
-
 import { NavbarList } from '../../components/Navbar';
 import BoxInfo from '../../components/BoxInfo/BoxInfo';
 import Header from '../../components/Header';
@@ -13,14 +12,28 @@ import './styles/Dashboard.scss';
 class Dashboard extends Component {
   state = {
     inputText: '',
-    results: []
+    results: [],
+    linha:'',
+    bus:{}
+  }
+
+  getLinha = () => {
+    return axios.get(`http://05696e8c.ngrok.io/api/OlhoVivo/buscaLinha?buscaLinha=${this.state.inputText}`)
+      .then(({ data }) => {
+        this.setState({
+          results: data
+        })
+      })
+      .catch((error) => {
+        console.log(error);
+      })
   }
 
   getBus = () => {
-    return axios.get(`https://swapi.co/api/people/${this.state.inputText}`)
+    return axios.get(`http://05696e8c.ngrok.io/api/OlhoVivo/PosicaoLinha?codigoLinha=${this.state.linha}`)
       .then(({ data }) => {
         this.setState({
-          results: data.films
+          bus: data
         })
       })
       .catch((error) => {
@@ -33,7 +46,7 @@ class Dashboard extends Component {
       inputText: this.search.value
     }, () => {
       if (this.state.inputText.length > 1) {
-        this.getBus()
+        this.getLinha()
       } else {
         this.setState({
           results: []
@@ -41,6 +54,16 @@ class Dashboard extends Component {
       }
     })
   }
+
+  handleClick = (cl) => {
+    console.log('this is:', cl);
+    this.setState({
+      linha: cl
+    }, () => {
+      this.getBus()
+    })
+  }
+
   render() {
     const nav = <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 485.213 485.213">
       <g>
@@ -50,9 +73,13 @@ class Dashboard extends Component {
     </svg>
 
     const items = this.state.results && this.state.results.map(
-      item =>
-        <NavbarList key={item} className='list-item-bus'>
-          <p>{item}</p>
+      (item, index) =>
+        <NavbarList key={index} className='list-item-bus' >
+        <div onClick={() => this.handleClick(item.cl)}>
+          <span>{item.lt}-{item.tl} -> {item.sl === 1 ? `${item.tp}` : `${item.ts}`}</span>
+          <br/>
+          <span>{item.ts} / {item.tp}</span>
+        </div>
         </NavbarList>
     )
     return (
