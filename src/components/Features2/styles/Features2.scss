@@ -4,9 +4,9 @@
   
   
   .Title{
-    color: #fff;
+    color: #8ddeff;
     hr{
-      background: #fff;
+      background: #8ddeff;
     }
   }
 
@@ -34,5 +34,27 @@
     text-align: center;
     font-size: 14px;
     
+  }
+}
+
+@media(min-width: 768px){
+  .Features2-CardInfo{
+    .CardInfo{
+      justify-content: flex-end;
+
+      h3{
+        margin-right: 110px;
+      }
+
+      img{
+        margin: 0 20px;
+      }
+
+      &.inverse{
+        h3{
+          margin-left: 110px;
+        }
+      }
+    }
   }
 }
