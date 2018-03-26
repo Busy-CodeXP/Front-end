@@ -18,7 +18,7 @@ class Dashboard extends Component {
   }
 
   getLinha = () => {
-    return axios.get(`http://05696e8c.ngrok.io/api/OlhoVivo/buscaLinha?buscaLinha=${this.state.inputText}`)
+    return axios.get(`http://98c093af.ngrok.io/api/OlhoVivo/buscaLinha?buscaLinha=${this.state.inputText}`)
       .then(({ data }) => {
         this.setState({
           results: data
@@ -30,7 +30,7 @@ class Dashboard extends Component {
   }
 
   getBus = () => {
-    return axios.get(`http://05696e8c.ngrok.io/api/OlhoVivo/PosicaoLinha?codigoLinha=${this.state.linha}`)
+    return axios.get(`http://98c093af.ngrok.io/api/OlhoVivo/PosicaoLinha?codigoLinha=${this.state.linha}`)
       .then(({ data }) => {
         this.setState({
           bus: data
@@ -95,6 +95,35 @@ class Dashboard extends Component {
 
         <BusInfo
           linha='1234-10'
+          trajeto="TERM. JD. BOLADO / JD. OSASCO"
+        />
+        <BusInfo
+          linha='1234-10'
+          trajeto="TERM. JD. BOLADO / JD. OSASCO"
+        />
+        <BusInfo
+          linha='1234-10'
+          trajeto="TERM. JD. BOLADO / JD. OSASCO"
+        />
+        <BusInfo
+          linha='1234-10'
+          trajeto="TERM. JD. BOLADO / JD. OSASCO"
+        />
+        <BusInfo
+          linha='1234-10'
+          trajeto="TERM. JD. BOLADO / JD. OSASCO"
+        />
+        <BusInfo
+          linha='1234-10'
+          trajeto="TERM. JD. BOLADO / JD. OSASCO"
+        />
+        <BusInfo
+          linha='1234-10'
+          trajeto="TERM. JD. BOLADO / JD. OSASCO"
+        />
+        <BusInfo
+          linha='1234-10'
+          trajeto="TERM. JD. BOLADO / JD. OSASCO"
         />
 
         <section className='Dashboard-BoxInfo'>
