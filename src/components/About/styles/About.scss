@@ -1,9 +1,13 @@
-.About{
+.About-container{
   background: #edf1f5;
+  display: flex;
+
+.About{
   padding: 40px 5%;
 
-  p{
+  .text{
     text-align: justify;
+    margin: 20px 0;
   }
 
   .googlePlay{
@@ -20,8 +24,18 @@
     }
 
   }
+}
   
   img{
     display: none;
+  }
+}
+
+@media (min-width:768px){
+  .About-container{
+
+    img{
+      display: block;
+    }
   }
 }
