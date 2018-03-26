@@ -1,13 +1,18 @@
-.About{
+.About-container{
   background: #edf1f5;
-  padding: 20px 5%;
+  display: flex;
 
-  p{
+.About{
+  padding: 40px 5%;
+
+  .text{
     text-align: justify;
+    margin: 20px 0;
   }
 
   .googlePlay{
     padding: 0 25px;
+    margin-top: 30px;
 
     p{
       margin: 8px 0;
@@ -16,6 +21,21 @@
 
     span{
       font-size: 14px;
+    }
+
+  }
+}
+  
+  img{
+    display: none;
+  }
+}
+
+@media (min-width:768px){
+  .About-container{
+
+    img{
+      display: block;
     }
   }
 }

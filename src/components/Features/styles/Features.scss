@@ -1,8 +1,22 @@
 .Features{
-  padding: 20px 5%;
-  &-cards{
+  padding: 40px 5%;
+
+  &-BoxFeatures{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .image{
+    display: none;
+  }
+}
+
+@media (min-width: 768px){
+  .Features{
+
+    &-BoxFeatures{
+      flex-wrap: unset;
+    }
   }
 }
