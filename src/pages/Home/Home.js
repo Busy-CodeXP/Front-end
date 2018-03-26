@@ -6,6 +6,8 @@ import Features2 from '../../components/Features2/Features2';
 import HowItWorks from '../../components/HowItWorks/HowItWorks';
 
 import './styles/Home.scss';
+import Contact from '../../components/Contact/Contact';
+import Footer from '../../components/Footer/Footer';
 
 class Home extends Component {
   render() {
@@ -16,6 +18,8 @@ class Home extends Component {
         <About />
         <Features2 />
         <HowItWorks/>
+        <Contact/>
+        <Footer/>
       </Fragment>
     );
   }
