@@ -92,40 +92,10 @@ class Dashboard extends Component {
           />
           {items}
         </Header>
-
         <BusInfo
           linha='1234-10'
           trajeto="TERM. JD. BOLADO / JD. OSASCO"
         />
-        <BusInfo
-          linha='1234-10'
-          trajeto="TERM. JD. BOLADO / JD. OSASCO"
-        />
-        <BusInfo
-          linha='1234-10'
-          trajeto="TERM. JD. BOLADO / JD. OSASCO"
-        />
-        <BusInfo
-          linha='1234-10'
-          trajeto="TERM. JD. BOLADO / JD. OSASCO"
-        />
-        <BusInfo
-          linha='1234-10'
-          trajeto="TERM. JD. BOLADO / JD. OSASCO"
-        />
-        <BusInfo
-          linha='1234-10'
-          trajeto="TERM. JD. BOLADO / JD. OSASCO"
-        />
-        <BusInfo
-          linha='1234-10'
-          trajeto="TERM. JD. BOLADO / JD. OSASCO"
-        />
-        <BusInfo
-          linha='1234-10'
-          trajeto="TERM. JD. BOLADO / JD. OSASCO"
-        />
-
         <section className='Dashboard-BoxInfo'>
           <BoxInfo
             title='TÍTULO'
