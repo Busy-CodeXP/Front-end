@@ -11,33 +11,37 @@ class HowItWorks extends Component {
 
         <Title title="Como Funciona" />
 
-        <div className="HowItWorks-description">
-          <h3>Lorem ipsum dolor sit amet</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus culpa dolorem aliquid sequi modi magni veniam doloribus omnis autem asperiores?</p>
-        </div>
+        <div className="HowItWorks-container">
+          <div className="HowItWorks-inner">
+            <div className="HowItWorks-inner-description">
+              <h3>Lorem ipsum dolor sit amet</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus culpa dolorem aliquid sequi modi magni veniam doloribus omnis autem asperiores?</p>
+            </div>
 
-        <div className="HowItWorks-CardInfo">
-          <CardInfo
-            inverse='inverse'
-            title="Lorem ipsum dolor"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
-            image="http://via.placeholder.com/50x50"
-          />
-          <CardInfo
-            inverse='inverse'
-            title="Lorem ipsum dolor"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
-            image="http://via.placeholder.com/50x50"
-          />
-          <CardInfo
-            inverse='inverse' 
-            title="Lorem ipsum dolor"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
-            image="http://via.placeholder.com/50x50"
-          />
-        </div>
+            <div className="HowItWorks-inner-CardInfo">
+              <CardInfo
+                inverse='inverse'
+                title="Lorem ipsum dolor"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
+                image="http://via.placeholder.com/60x60"
+              />
+              <CardInfo
+                inverse='inverse'
+                title="Lorem ipsum dolor"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
+                image="http://via.placeholder.com/60x60"
+              />
+              <CardInfo
+                inverse='inverse'
+                title="Lorem ipsum dolor"
+                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
+                image="http://via.placeholder.com/60x60"
+              />
+            </div>
+          </div>
 
-        <img className='image' src="http://via.placeholder.com/350x500" alt="" />
+          <img className='image' src="http://via.placeholder.com/350x500" alt="" />
+        </div>
 
       </section>
     )

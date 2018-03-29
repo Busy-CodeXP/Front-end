@@ -5,7 +5,6 @@
   align-items: center;
   padding-bottom: 10px;
   padding-top: 20px;
-  border-bottom: 1px solid rgba(255,255,255,.3);
 
   h3{
     width: 75%;
@@ -19,7 +18,7 @@
 
   img{
     position: relative;
-    top: -15px
+    top: -15px;
   }
   
   &.inverse{
@@ -32,6 +31,11 @@
     p{
       text-align: left !important;
     }
+  }
+}
+
+@media(min-width:1024px){
+  .CardInfo{
   }
 }
 

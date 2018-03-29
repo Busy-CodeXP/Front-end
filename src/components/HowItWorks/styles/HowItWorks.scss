@@ -2,25 +2,45 @@
   padding: 40px 5%;
   background: #edf1f5;
 
-  &-description{
-    h3{
-      font-size: 20px;
-      color: #5f3fff;
-      font-weight: normal;
-      margin-bottom: 10px;
-    }
-  }
+  &-container{
+    display: flex;
+    justify-content: space-around;
 
-  &-CardInfo{
-    .CardInfo{
-      h3, p{
-        width: 80%;
+    .HowItWorks-inner{
+      max-width: 450px;
+
+      &-description{
+        h3{
+          font-size: 20px;
+          color: #38b7df;
+          font-weight: normal;
+          margin-bottom: 10px;
+        }
+      }
+
+      &-CardInfo{
+        max-width: 400px;
+        margin: 20px 0;
+
+        .CardInfo{
+          h3, p{
+            width: 75%;
+          }
+        }
+
       }
     }
-
   }
   
   .image{
     display: none;
+  }
+}
+
+@media(min-width:768px){
+  .HowItWorks{
+    .image{
+      display: block;
+    }
   }
 }

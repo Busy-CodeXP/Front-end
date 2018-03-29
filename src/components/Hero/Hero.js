@@ -20,10 +20,11 @@ class Hero extends Component {
       <section className='Hero'>
         <Header titleLogo='BUSY' burger={nav}>
           <NavbarList link='#'>Home</NavbarList>
-          <NavbarList link='#'>Sobre</NavbarList>
           <NavbarList link='#'>Funcionalidades</NavbarList>
-          <NavbarList link='#'>Download</NavbarList>
+          <NavbarList link='#'>Sobre</NavbarList>
+          <NavbarList link='#'>Como Funciona</NavbarList>
           <NavbarList link='#'>Contato</NavbarList>
+          <NavbarList link='#'>Download</NavbarList>
         </Header>
 
         <div className="slogan-container">
@@ -41,7 +42,7 @@ class Hero extends Component {
             </div>
           </div>
 
-          <img src="http://via.placeholder.com/300x500" alt='' />
+          <img src="http://via.placeholder.com/250x450" alt='' />
 
         </div>
 
