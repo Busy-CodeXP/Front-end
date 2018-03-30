@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from 'react';
-import axios from 'axios';
+import * as BusyApi from "../../api/BusyApi";
 
 import { NavbarList } from '../../components/Navbar';
 import BoxInfo from '../../components/BoxInfo/BoxInfo';
@@ -13,12 +13,12 @@ class Dashboard extends Component {
   state = {
     inputText: '',
     results: [],
-    linha:'',
-    bus:{}
+    linha: '',
+    bus: {}
   }
 
   getLinha = () => {
-    return axios.get(`http://98c093af.ngrok.io/api/OlhoVivo/buscaLinha?buscaLinha=${this.state.inputText}`)
+    BusyApi.getLinhas(this.state.inputText)
       .then(({ data }) => {
         this.setState({
           results: data
@@ -30,7 +30,7 @@ class Dashboard extends Component {
   }
 
   getBus = () => {
-    return axios.get(`http://98c093af.ngrok.io/api/OlhoVivo/PosicaoLinha?codigoLinha=${this.state.linha}`)
+    BusyApi.getOnibusLinha(this.state.inputText)
       .then(({ data }) => {
         this.setState({
           bus: data
@@ -45,14 +45,17 @@ class Dashboard extends Component {
     this.setState({
       inputText: this.search.value
     }, () => {
-      if (this.state.inputText.length > 1) {
-        this.getLinha()
+      if (this.state.inputText.length >= 3) {
+        setTimeout(() => {
+          this.getLinha()
+        }, 500);
       } else {
         this.setState({
           results: []
         })
       }
     })
+
   }
 
   handleClick = (cl) => {
@@ -75,11 +78,11 @@ class Dashboard extends Component {
     const items = this.state.results && this.state.results.map(
       (item, index) =>
         <NavbarList key={index} className='list-item-bus' >
-        <div onClick={() => this.handleClick(item.cl)}>
-          <span>{item.lt}-{item.tl} -> {item.sl === 1 ? `${item.tp}` : `${item.ts}`}</span>
-          <br/>
-          <span>{item.ts} / {item.tp}</span>
-        </div>
+          <div onClick={() => this.handleClick(item.cl)}>
+            <span>{item.lt}-{item.tl} -> {item.sl === 1 ? `${item.tp}` : `${item.ts}`}</span>
+            <br />
+            <span>{item.ts} / {item.tp}</span>
+          </div>
         </NavbarList>
     )
     return (
