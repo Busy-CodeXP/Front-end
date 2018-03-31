@@ -96,7 +96,7 @@ class Dashboard extends Component {
     return (
       <Fragment>
         <Header background='#0893C3' burger={nav}>
-          <input
+          <input className='search'
             placeholder="procura ae"
             ref={input => this.search = input}
             onChange={this.handleInputChange}

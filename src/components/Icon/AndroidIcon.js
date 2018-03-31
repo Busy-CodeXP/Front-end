@@ -21,8 +21,8 @@ const AndroidIcon = ({ fill, height, width }) => {
 
 AndroidIcon.defaultProps = {
   fill: '#000',
-  height: '18px',
-  width: '18px'
+  height: '20px',
+  width: '20px'
 };
 
 export default AndroidIcon;

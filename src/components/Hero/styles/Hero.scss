@@ -5,7 +5,7 @@
     padding: 50px 5%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     
 
     img{
@@ -18,7 +18,7 @@
     display: inline-block;
 
     .title{
-      font-size: 80px;
+      font-size: 90px;
       color: #fff;
       
     }
@@ -26,12 +26,11 @@
     .subTitle{
       font-weight: normal;
       color: #fff;
-      font-size: 20px;
+      font-size: 25px;
       
     }
 
     p{
-      font-size: 13px;
       line-height: 1.5;
       color: #fff;
       margin-top: 20px;
@@ -40,6 +39,17 @@
     .buttons{
       display: flex;
       margin-top: 40px;
+      justify-content: center;
+    }
+  }
+}
+
+@media (min-width:768px){
+  .Hero{
+    .slogan-container{
+      img{
+        display: block;
+      }
     }
   }
 }

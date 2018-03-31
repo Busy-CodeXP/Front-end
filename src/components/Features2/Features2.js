@@ -15,43 +15,47 @@ class Features2 extends Component {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus culpa dolorem aliquid sequi modi magni veniam doloribus omnis autem asperiores? Non maxime obcaecati earum sit eius voluptatibus dolore dignissimos itaque. Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
         </div>
 
-        <div className="Features2-CardInfo">
-          <CardInfo
-            title="Lorem ipsum dolor"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
-            image="http://via.placeholder.com/70x70"
-          />
-          <CardInfo
-            title="Lorem ipsum dolor"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
-            image="http://via.placeholder.com/70x70"
-          />
-          <CardInfo
-            title="Lorem ipsum dolor"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
-            image="http://via.placeholder.com/70x70"
-          />
+        <div className="Features2-CardInfo-container">
+          <div className="Features2-CardInfo">
+            <CardInfo
+              title="Lorem ipsum dolor"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
+              image="http://via.placeholder.com/70x70"
+            />
+            <CardInfo
+              title="Lorem ipsum dolor"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
+              image="http://via.placeholder.com/70x70"
+            />
+            <CardInfo
+              title="Lorem ipsum dolor"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
+              image="http://via.placeholder.com/70x70"
+            />
+          </div>
 
-          <img className='image' src="http://via.placeholder.com/250x500" alt=""/>
+          <img className='image' src="http://via.placeholder.com/250x500" alt="" />
 
-           <CardInfo
-            inverse='inverse'
-            title="Lorem ipsum dolor"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
-            image="http://via.placeholder.com/70x70"
-          />
-          <CardInfo
-            inverse='inverse' 
-            title="Lorem ipsum dolor"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
-            image="http://via.placeholder.com/70x70"
-          />
-          <CardInfo
-            inverse='inverse'
-            title="Lorem ipsum dolor"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
-            image="http://via.placeholder.com/70x70"
-          />
+          <div className="Features2-CardInfo">
+            <CardInfo
+              inverse='inverse'
+              title="Lorem ipsum dolor"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
+              image="http://via.placeholder.com/70x70"
+            />
+            <CardInfo
+              inverse='inverse'
+              title="Lorem ipsum dolor"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
+              image="http://via.placeholder.com/70x70"
+            />
+            <CardInfo
+              inverse='inverse'
+              title="Lorem ipsum dolor"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
+              image="http://via.placeholder.com/70x70"
+            />
+          </div>
         </div>
 
       </section>
