@@ -73,7 +73,7 @@ class Dashboard extends Component {
       this.getBus()
     })
   }
-  
+
   render() {
     console.log(this.state)
     const nav = <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 485.213 485.213">
@@ -83,9 +83,9 @@ class Dashboard extends Component {
       </g>
     </svg>
 
-const items = this.state.results && this.state.results.map(
-  (item, index) =>
-  <NavbarList key={index} className='list-item-bus' >
+    const items = this.state.results && this.state.results.map(
+      (item, index) =>
+        <NavbarList key={index} className='list-item-bus' >
           <div onClick={() => this.handleClick(item.cl)}>
             <span>{item.lt}-{item.tl} -> {item.sl === 1 ? `${item.tp}` : `${item.ts}`}</span>
             <br />
