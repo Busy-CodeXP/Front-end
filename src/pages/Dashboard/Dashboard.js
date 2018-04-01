@@ -15,9 +15,15 @@ class Dashboard extends Component {
     inputText: '',
     results: [],
     linha: '',
-    bus: {}
+    bus: {},
+    seila: {}
   }
 
+  getSeila = (param) =>{
+    this.setState({
+      seila : param
+    })
+  }
   getLinha = () => {
     this.setState({
       results: mockdados.linha8000
@@ -33,6 +39,7 @@ class Dashboard extends Component {
     //   })
   }
 
+   
   getBus = () => {
     this.setState({
       bus: mockdados.busLinha
@@ -109,20 +116,21 @@ class Dashboard extends Component {
         />
         <section className='Dashboard-BoxInfo'>
           <BoxInfo
-            title='TÍTULO'
-            count='10'
+            title='Lotação'
+            count={this.state.seila.l}
+            porcent={this.state.seila.l}
           />
           <BoxInfo
-            title='TÍTULO'
-            count='50'
+            title='Em pé'
+            count={this.state.seila.empe}
           />
           <BoxInfo
-            title='TÍTULO'
-            count='100'
+            title='Sentados'
+            count={this.state.seila.sentado}
           />
         </section>
 
-        <GoogleMaps />
+        <GoogleMaps data={this.state.bus} algumacoisa={this.getSeila}/>
 
       </Fragment>
     );
