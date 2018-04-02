@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
-import axios from 'axios';
+import * as BusyApi from "../../api/BusyApi";
+import * as mockdados from "./mockdados";
 
 import { NavbarList } from '../../components/Navbar';
 import BoxInfo from '../../components/BoxInfo/BoxInfo';
@@ -13,12 +14,21 @@ class Dashboard extends Component {
   state = {
     inputText: '',
     results: [],
-    linha:'',
-    bus:{}
+    linha: '',
+    bus: {},
+    seila: {}
   }
 
+  getSeila = (param) => {
+    this.setState({
+      seila: param
+    })
+  }
   getLinha = () => {
-    return axios.get(`http://98c093af.ngrok.io/api/OlhoVivo/buscaLinha?buscaLinha=${this.state.inputText}`)
+    // this.setState({
+    //   results: mockdados.linha8000
+    // })
+    BusyApi.getLinhas(this.state.inputText)
       .then(({ data }) => {
         this.setState({
           results: data
@@ -29,8 +39,12 @@ class Dashboard extends Component {
       })
   }
 
+
   getBus = () => {
-    return axios.get(`http://98c093af.ngrok.io/api/OlhoVivo/PosicaoLinha?codigoLinha=${this.state.linha}`)
+    // this.setState({
+    //   bus: mockdados.busLinha
+    // })
+    BusyApi.getOnibusLinha(this.state.linha)
       .then(({ data }) => {
         this.setState({
           bus: data
@@ -45,14 +59,17 @@ class Dashboard extends Component {
     this.setState({
       inputText: this.search.value
     }, () => {
-      if (this.state.inputText.length > 1) {
-        this.getLinha()
+      if (this.state.inputText.length >= 3) {
+        setTimeout(() => {
+          this.getLinha()
+        }, 500);
       } else {
         this.setState({
           results: []
         })
       }
     })
+
   }
 
   handleClick = (cl) => {
@@ -65,6 +82,7 @@ class Dashboard extends Component {
   }
 
   render() {
+    console.log(this.state)
     const nav = <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" width="512px" height="512px" viewBox="0 0 485.213 485.213">
       <g>
         <path d="M363.909,181.955C363.909,81.473,282.44,0,181.956,0C81.474,0,0.001,81.473,0.001,181.955s81.473,181.951,181.955,181.951    C282.44,363.906,363.909,282.437,363.909,181.955z M181.956,318.416c-75.252,0-136.465-61.208-136.465-136.46    c0-75.252,61.213-136.465,136.465-136.465c75.25,0,136.468,61.213,136.468,136.465    C318.424,257.208,257.206,318.416,181.956,318.416z" fill="#FFFFFF" />
@@ -75,11 +93,11 @@ class Dashboard extends Component {
     const items = this.state.results && this.state.results.map(
       (item, index) =>
         <NavbarList key={index} className='list-item-bus' >
-        <div onClick={() => this.handleClick(item.cl)}>
-          <span>{item.lt}-{item.tl} -> {item.sl === 1 ? `${item.tp}` : `${item.ts}`}</span>
-          <br/>
-          <span>{item.ts} / {item.tp}</span>
-        </div>
+          <div onClick={() => this.handleClick(item.cl)}>
+            <span>{item.lt}-{item.tl} -> {item.sl === 1 ? `${item.tp}` : `${item.ts}`}</span>
+            <br />
+            <span>{item.ts} / {item.tp}</span>
+          </div>
         </NavbarList>
     )
     return (
@@ -100,20 +118,21 @@ class Dashboard extends Component {
 
         <section className='Dashboard-BoxInfo'>
           <BoxInfo
-            title='TÍTULO'
-            count='10'
+            title='Lotação'
+            count={this.state.seila.lotacao}
+            porcent={this.state.seila.lotacao}
           />
           <BoxInfo
-            title='TÍTULO'
-            count='50'
+            title='Capacidade'
+            count={this.state.seila.capacidade}
           />
           <BoxInfo
-            title='TÍTULO'
-            count='100'
+            title='Wheelchair'
+            count={this.state.seila.a && 'TRUE'}
           />
         </section>
 
-        <GoogleMaps />
+        <GoogleMaps data={this.state.bus} algumacoisa={this.getSeila} />
 
       </Fragment>
     );

@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './styles/Footer.scss';
 import Title from '../Title';
 import Button from '../Button';
-import DownloadIcon, { AndroidIcon } from './../Icon';
+import { AndroidIcon } from './../Icon';
 
 
 class Footer extends Component {
