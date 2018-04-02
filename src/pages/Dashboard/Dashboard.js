@@ -97,34 +97,6 @@ class Dashboard extends Component {
           linha='1234-10'
           trajeto="TERM. JD. BOLADO / JD. OSASCO"
         />
-        <BusInfo
-          linha='1234-10'
-          trajeto="TERM. JD. BOLADO / JD. OSASCO"
-        />
-        <BusInfo
-          linha='1234-10'
-          trajeto="TERM. JD. BOLADO / JD. OSASCO"
-        />
-        <BusInfo
-          linha='1234-10'
-          trajeto="TERM. JD. BOLADO / JD. OSASCO"
-        />
-        <BusInfo
-          linha='1234-10'
-          trajeto="TERM. JD. BOLADO / JD. OSASCO"
-        />
-        <BusInfo
-          linha='1234-10'
-          trajeto="TERM. JD. BOLADO / JD. OSASCO"
-        />
-        <BusInfo
-          linha='1234-10'
-          trajeto="TERM. JD. BOLADO / JD. OSASCO"
-        />
-        <BusInfo
-          linha='1234-10'
-          trajeto="TERM. JD. BOLADO / JD. OSASCO"
-        />
 
         <section className='Dashboard-BoxInfo'>
           <BoxInfo

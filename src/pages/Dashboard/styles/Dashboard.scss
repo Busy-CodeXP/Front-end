@@ -13,5 +13,11 @@
 }
 
 .Dashboard-BoxInfo{
-  padding: 20px 5%;
+  padding: 20px 5%; 
+}
+
+@media(min-width:1024px){
+  .Dashboard-BoxInfo{
+    display: flex;
+  }
 }
