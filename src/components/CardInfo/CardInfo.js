@@ -7,7 +7,7 @@ const CardInfo = ({title,image,description, className, inverse}) => {
     <div className={`${className} ${inverse}`}>
       <h3>{title}</h3>
       <p>{description}</p>
-      <img src={image} alt="Imagem do CardInfo" />
+      <div className='boxCircle'><img src={image} alt="Imagem do CardInfo" /></div>
     </div>
   );
 

@@ -19,8 +19,8 @@ class Hero extends Component {
     return (
       <section className='Hero'>
         <Header titleLogo='BUSY' burger={nav}>
-          <NavbarList link='#'>Home</NavbarList>
-          <NavbarList link='#'>Funcionalidades</NavbarList>
+          <NavbarList link='#'>Dashboard</NavbarList>
+          <NavbarList link='#Features'>Funcionalidades</NavbarList>
           <NavbarList link='#'>Sobre</NavbarList>
           <NavbarList link='#'>Como Funciona</NavbarList>
           <NavbarList link='#'>Contato</NavbarList>
@@ -31,7 +31,7 @@ class Hero extends Component {
           <div className="slogan">
             <h1 className="title">Busy</h1>
             <h2 className="subTitle">Mais comodidade às suas viagens</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac arcu id ante sagittis semper. Suspendisse aliquet, nisi quis iaculis iaculis, est velit porttitor justo, ut blandit est felis dignissim velit.</p>
+            <p>Mude a forma de se transportar em Sampa. Otimize suas rotas e tenha mais conforto. Com o nosso aplicativo, a espera por ônibus se torna mais atraente.</p>
 
             <div className="buttons">
               <Button className='default'>

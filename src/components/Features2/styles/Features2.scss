@@ -1,6 +1,7 @@
 .Features2{
   padding: 40px 5%;
   background:linear-gradient(to bottom right, #5f3fff, #8DDEFF);  
+  text-align: center;    
   
   
   .Title{
@@ -12,7 +13,7 @@
 
   &-description{
     p{
-      margin: 40px auto;
+      margin: 30px auto;
       max-width: 700px;
     }
   }
@@ -71,11 +72,17 @@
     .Features2-CardInfo-container{
       flex-wrap: nowrap;
       justify-content: space-around;      
-
-      .Features2-CardInfo{
-        
-      }
     }
 
+  }
+}
+
+@media(min-width:1260px){
+  .Features2{
+    .Features2-CardInfo-container{
+      .image{
+        display: block;
+      }
+    }
   }
 }
