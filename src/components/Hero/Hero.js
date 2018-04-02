@@ -19,9 +19,9 @@ class Hero extends Component {
     return (
       <section className='Hero'>
         <Header titleLogo='BUSY' burger={nav}>
-          <NavbarList link='#'>Dashboard</NavbarList>
+          <NavbarList link='/dashboard'>Dashboard</NavbarList>
           <NavbarList link='#Features'>Funcionalidades</NavbarList>
-          <NavbarList link='#'>Sobre</NavbarList>
+          <NavbarList link='#About'>Sobre</NavbarList>
           <NavbarList link='#'>Como Funciona</NavbarList>
           <NavbarList link='#'>Contato</NavbarList>
           <NavbarList link='#'>Download</NavbarList>
