@@ -19,40 +19,40 @@ class Dashboard extends Component {
     seila: {}
   }
 
-  getSeila = (param) =>{
+  getSeila = (param) => {
     this.setState({
-      seila : param
+      seila: param
     })
   }
   getLinha = () => {
-    this.setState({
-      results: mockdados.linha8000
-    })
-    // BusyApi.getLinhas(this.state.inputText)
-    //   .then(({ data }) => {
-    //     this.setState({
-    //       results: data
-    //     })
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //   })
+    // this.setState({
+    //   results: mockdados.linha8000
+    // })
+    BusyApi.getLinhas(this.state.inputText)
+      .then(({ data }) => {
+        this.setState({
+          results: data
+        })
+      })
+      .catch((error) => {
+        console.log(error);
+      })
   }
 
-   
+
   getBus = () => {
-    this.setState({
-      bus: mockdados.busLinha
-    })
-    // BusyApi.getOnibusLinha(this.state.inputText)
-    //   .then(({ data }) => {
-    //     this.setState({
-    //       bus: data
-    //     })
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //   })
+    // this.setState({
+    //   bus: mockdados.busLinha
+    // })
+    BusyApi.getOnibusLinha(this.state.linha)
+      .then(({ data }) => {
+        this.setState({
+          bus: data
+        })
+      })
+      .catch((error) => {
+        console.log(error);
+      })
   }
 
   handleInputChange = () => {
@@ -117,20 +117,20 @@ class Dashboard extends Component {
         <section className='Dashboard-BoxInfo'>
           <BoxInfo
             title='Lotação'
-            count={this.state.seila.l}
-            porcent={this.state.seila.l}
+            count={this.state.seila.lotacao}
+            porcent={this.state.seila.lotacao}
           />
           <BoxInfo
-            title='Em pé'
-            count={this.state.seila.empe}
+            title='Capacidade'
+            count={this.state.seila.capacidade}
           />
           <BoxInfo
-            title='Sentados'
-            count={this.state.seila.sentado}
+            title='Whechain'
+            count={this.state.seila.a && 'TRUE'}
           />
         </section>
 
-        <GoogleMaps data={this.state.bus} algumacoisa={this.getSeila}/>
+        <GoogleMaps data={this.state.bus} algumacoisa={this.getSeila} />
 
       </Fragment>
     );
