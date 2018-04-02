@@ -9,7 +9,7 @@ import DownloadIcon, { AndroidIcon } from './../Icon';
 class Footer extends Component {
   render() {
     return (
-      <footer className='Footer'>
+      <footer className='Download' id='Download'>
           <Title title='Baixe agora' />
           <p>Baixe agora o Busy app e acabe com o desconforto nos ônibus.</p>
           <Button className="googlePlay">

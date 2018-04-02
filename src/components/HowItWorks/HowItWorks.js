@@ -7,7 +7,7 @@ import './styles/HowItWorks.scss'
 class HowItWorks extends Component {
   render() {
     return (
-      <section className='HowItWorks'>
+      <section className='HowItWorks' id='HowItWorks'>
 
         <Title title="Como Funciona" />
 

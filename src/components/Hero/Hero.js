@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom'
 
 import Button from '../Button';
 import Header from '../Header';
@@ -19,12 +20,12 @@ class Hero extends Component {
     return (
       <section className='Hero'>
         <Header titleLogo='BUSY' burger={nav}>
-          <NavbarList link='/dashboard'>Dashboard</NavbarList>
-          <NavbarList link='#Features'>Funcionalidades</NavbarList>
-          <NavbarList link='#About'>Sobre</NavbarList>
-          <NavbarList link='#'>Como Funciona</NavbarList>
-          <NavbarList link='#'>Contato</NavbarList>
-          <NavbarList link='#'>Download</NavbarList>
+          <Link to='/dashboard'>Dashboard</Link>
+          <a href='#Features'>Funcionalidades</a>
+          <a href='#About'>Sobre</a>
+          <a href='#HowItWorks'>Como Funciona</a>
+          <a href='#Contact'>Contato</a>
+          <a href='#Download'>Download</a>
         </Header>
 
         <div className="slogan-container">

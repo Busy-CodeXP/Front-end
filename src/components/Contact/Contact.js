@@ -7,7 +7,7 @@ import Form from '../Form/Form';
 class Contact extends Component {
   render(){
     return(
-      <section className='Contact'>
+      <section className='Contact' id='Contact'>
 
         <Title title='Contato'/>
 
