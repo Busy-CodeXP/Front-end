@@ -81,6 +81,7 @@ O projeto foi criado a partir do [Create React App](https://github.com/facebooki
  - [react-router-dom](https://github.com/ReactTraining/react-router/tree/master/packages/react-router-dom)
  - [sass-loader](https://github.com/webpack-contrib/sass-loader)
  - [react-google-maps](https://github.com/tomchentw/react-google-maps)
+ - [axios](https://github.com/axios/axios)
 ### Padrões dos componentes 
  A estrutura dos componentes foram escritos seguindo os artigos:
  - [Airbnb JavaScript](https://github.com/airbnb/javascript)
