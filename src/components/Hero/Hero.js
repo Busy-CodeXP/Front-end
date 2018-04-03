@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 import Button from '../Button';
 import Header from '../Header';
-import { NavbarList } from '../Navbar'
 import DownloadIcon from './../Icon';
 import './styles/Hero.scss';
 

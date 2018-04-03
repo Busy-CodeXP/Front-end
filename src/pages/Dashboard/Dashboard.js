@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import * as BusyApi from "../../api/BusyApi";
-import * as mockdados from "./mockdados";
+// import * as mockdados from "./mockdados";
 
 import { NavbarList } from '../../components/Navbar';
 import BoxInfo from '../../components/BoxInfo/BoxInfo';
@@ -13,46 +13,39 @@ import './styles/Dashboard.scss';
 class Dashboard extends Component {
   state = {
     inputText: '',
-    results: [],
-    linha: '',
-    bus: {},
-    seila: {}
+    listaLinhas: [],
+    codigoLinha: '',
+    todosOnibusLinha: {},
+    onibus: {}
   }
 
-  getSeila = (param) => {
+  getOnibus = (param) => {
     this.setState({
-      seila: param
+      onibus: param
     })
   }
   getLinha = () => {
-    this.setState({
-      results: mockdados.linha8000
-    })
-    // BusyApi.getLinhas(this.state.inputText)
-    //   .then(({ data }) => {
-    //     this.setState({
-    //       results: data
-    //     })
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //   })
+    BusyApi.getLinhas(this.state.inputText)
+      .then(({ data }) => {
+        this.setState({
+          listaLinhas: data
+        })
+      })
+      .catch((error) => {
+        console.log(error);
+      })
   }
 
-
   getBus = () => {
-    this.setState({
-      bus: mockdados.busLinha
-    })
-    // BusyApi.getOnibusLinha(this.state.linha)
-    //   .then(({ data }) => {
-    //     this.setState({
-    //       bus: data
-    //     })
-    //   })
-    //   .catch((error) => {
-    //     console.log(error);
-    //   })
+    BusyApi.getOnibusLinha(this.state.codigoLinha)
+      .then(({ data }) => {
+        this.setState({
+          todosOnibusLinha: data
+        })
+      })
+      .catch((error) => {
+        console.log(error);
+      })
   }
 
   handleInputChange = () => {
@@ -65,7 +58,7 @@ class Dashboard extends Component {
         }, 500);
       } else {
         this.setState({
-          results: []
+          listaLinhas: []
         })
       }
     })
@@ -75,7 +68,7 @@ class Dashboard extends Component {
   handleClick = (cl) => {
     console.log('this is:', cl);
     this.setState({
-      linha: cl
+      codigoLinha: cl
     }, () => {
       this.getBus()
     })
@@ -90,7 +83,7 @@ class Dashboard extends Component {
       </g>
     </svg>
 
-    const items = this.state.results && this.state.results.map(
+    const items = this.state.listaLinhas && this.state.listaLinhas.map(
       (item, index) =>
         <NavbarList key={index} className='list-item-bus' >
           <div onClick={() => this.handleClick(item.cl)}>
@@ -119,20 +112,20 @@ class Dashboard extends Component {
         <section className='Dashboard-BoxInfo'>
           <BoxInfo
             title='Lotação'
-            count={this.state.seila.lotacao}
-            porcent={this.state.seila.lotacao}
+            count={this.state.onibus.lotacao}
+            porcent={this.state.onibus.lotacao}
           />
           <BoxInfo
             title='Capacidade'
-            count={this.state.seila.capacidade}
+            count={this.state.onibus.capacidade}
           />
           <BoxInfo
             title='Wheelchair'
-            count={this.state.seila.a && 'TRUE'}
+            count={this.state.onibus.a ? 'TRUE' : 'FALSE'}
           />
         </section>
 
-        <GoogleMaps data={this.state.bus} algumacoisa={this.getSeila} />
+        <GoogleMaps data={this.state.todosOnibusLinha} algumacoisa={this.getOnibus} />
 
       </div>
     );
