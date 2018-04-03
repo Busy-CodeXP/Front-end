@@ -25,34 +25,34 @@ class Dashboard extends Component {
     })
   }
   getLinha = () => {
-    // this.setState({
-    //   results: mockdados.linha8000
-    // })
-    BusyApi.getLinhas(this.state.inputText)
-      .then(({ data }) => {
-        this.setState({
-          results: data
-        })
-      })
-      .catch((error) => {
-        console.log(error);
-      })
+    this.setState({
+      results: mockdados.linha8000
+    })
+    // BusyApi.getLinhas(this.state.inputText)
+    //   .then(({ data }) => {
+    //     this.setState({
+    //       results: data
+    //     })
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //   })
   }
 
 
   getBus = () => {
-    // this.setState({
-    //   bus: mockdados.busLinha
-    // })
-    BusyApi.getOnibusLinha(this.state.linha)
-      .then(({ data }) => {
-        this.setState({
-          bus: data
-        })
-      })
-      .catch((error) => {
-        console.log(error);
-      })
+    this.setState({
+      bus: mockdados.busLinha
+    })
+    // BusyApi.getOnibusLinha(this.state.linha)
+    //   .then(({ data }) => {
+    //     this.setState({
+    //       bus: data
+    //     })
+    //   })
+    //   .catch((error) => {
+    //     console.log(error);
+    //   })
   }
 
   handleInputChange = () => {
@@ -94,14 +94,14 @@ class Dashboard extends Component {
       (item, index) =>
         <NavbarList key={index} className='list-item-bus' >
           <div onClick={() => this.handleClick(item.cl)}>
-            <span>{item.lt}-{item.tl} -> {item.sl === 1 ? `${item.tp}` : `${item.ts}`}</span>
+            <span>{item.lt}-{item.tl} &#10144; {item.sl === 1 ? `${item.tp}` : `${item.ts}`}</span>
             <br />
             <span>{item.ts} / {item.tp}</span>
           </div>
         </NavbarList>
     )
     return (
-      <Fragment>
+      <div className='Dashboard'>
         <Header background='#0893C3' burger={nav}>
           <input className='search'
             placeholder="procura ae"
@@ -134,7 +134,7 @@ class Dashboard extends Component {
 
         <GoogleMaps data={this.state.bus} algumacoisa={this.getSeila} />
 
-      </Fragment>
+      </div>
     );
   }
 }

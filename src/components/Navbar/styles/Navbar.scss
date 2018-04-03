@@ -1,7 +1,3 @@
-$blue:#028cc0;
-$lightBlue:#8DDEFF;
-
-
 .scroll{
   overflow: hidden;
   height: 100%;
@@ -9,56 +5,14 @@ $lightBlue:#8DDEFF;
   position: fixed;
 }
 
-.Navbar{
-
-  svg{
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    cursor: pointer;
-    position: relative;
-    z-index: 100;
-    
-  }
+svg{
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 100;
   
-  &-list{
-    list-style-type: none;
-    width: 270px;
-    margin: 0;
-    margin-right: -270px;
-    position: fixed;
-    top: 0px;
-    right: 0;
-    height: 100%;
-    transition: .5s;
-    text-align: right;
-    background: linear-gradient(to bottom, #0893c3, #8ddeff);
-    padding: 0;    
-    padding-top: 80px;
-    z-index: 1;
-    
-
-      a{
-        text-decoration: none;
-        color: #fff;
-        transition: .3s;
-        display: block;
-        padding: 20px;
-        font-size: 16px;
-      }
-
-      a:hover{
-        color:$lightBlue;
-      }
-
-    .search{
-      width: 85%;
-      margin: 0 20px;
-      padding: 5px 10px;
-      outline: none;
-    }
-  }
-
 }
 
 .menuActive{
@@ -69,34 +23,81 @@ $lightBlue:#8DDEFF;
   }
 }
 
-@media(min-width:1024px){
-  .Navbar{
-    svg{
-      display: none;
-    }
+.search{
+  width: 85%;
+  margin: 20px;
+  padding: 5px 10px;
+  outline: none;
+}
 
+  .Navbar{
+  
+    
     &-list{
       list-style-type: none;
-      width: auto;
-      height: auto;
-      position: initial;
+      width: 270px;
       margin: 0;
+      margin-right: -270px;
+      position: fixed;
+      top: 0px;
+      right: 0;
+      height: 100%;
       transition: .5s;
       text-align: right;
-      background: none;
+      background: linear-gradient(to bottom, #0893c3, #8ddeff);
       padding: 0;    
-      display: flex;
-
-      li{
+      padding-top: 80px;
+      z-index: 1;
+      
+  
         a{
-          padding: 15px 10px;
-          font-size: 14px;
+          text-decoration: none;
+          color: #fff;
+          transition: .3s;
+          display: block;
+          padding: 20px;
+          font-size: 16px;
         }
+  
+        a:hover{
+          color: #8DDEFF;
+        }
+  
+    }
+  
+  }
+
+
+@media(min-width:1024px){
+  .Home{
+    .Navbar{
+      svg{
+        display: none;
       }
 
-      li:first-of-type a{
-      }
+      &-list{
+        list-style-type: none;
+        width: auto;
+        height: auto;
+        position: initial;
+        margin: 0;
+        transition: .5s;
+        text-align: right;
+        background: none;
+        padding: 0;    
+        display: flex;
 
+        li{
+          a{
+            padding: 15px 10px;
+            font-size: 14px;
+          }
+        }
+
+        li:first-of-type a{
+        }
+
+      }
     }
   }
 }

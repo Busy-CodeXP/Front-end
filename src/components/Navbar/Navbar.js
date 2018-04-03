@@ -8,12 +8,13 @@ class Navbar extends Component {
     }
 
     openMenu = () => {
-        this.setState(state=>({click: !state.click}))
-        if(this.state.click){
-            document.body.classList.remove('scroll')            
-        }else{
-            document.body.classList.add('scroll')
-            
+        this.setState(state => ({ click: !state.click }))
+        if (window.innerWidth <= 1024) {
+            if (this.state.click) {
+                document.body.classList.remove('scroll')
+            } else {
+                document.body.classList.add('scroll')
+            }
         }
     }
 
