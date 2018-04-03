@@ -87,14 +87,14 @@ class Dashboard extends Component {
       (item, index) =>
         <NavbarList key={index} className='list-item-bus' >
           <div onClick={() => this.handleClick(item.cl)}>
-            <span>{item.lt}-{item.tl} -> {item.sl === 1 ? `${item.tp}` : `${item.ts}`}</span>
+            <span>{item.lt}-{item.tl} &#10144; {item.sl === 1 ? `${item.tp}` : `${item.ts}`}</span>
             <br />
             <span>{item.ts} / {item.tp}</span>
           </div>
         </NavbarList>
     )
     return (
-      <Fragment>
+      <div className='Dashboard'>
         <Header background='#0893C3' burger={nav}>
           <input className='search'
             placeholder="procura ae"
@@ -127,7 +127,7 @@ class Dashboard extends Component {
 
         <GoogleMaps data={this.state.todosOnibusLinha} algumacoisa={this.getOnibus} />
 
-      </Fragment>
+      </div>
     );
   }
 }

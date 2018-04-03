@@ -34,6 +34,42 @@ export const linha8000 = [
         tl: 10,
         tp: 'PÇA. RAMOS DE AZEVEDO',
         ts: 'TERM. LAPA'
+    },
+    {
+        cl: 34041,
+        lc: false,
+        lt: '8000',
+        sl: 2,
+        tl: 10,
+        tp: 'PÇA. RAMOS DE AZEVEDO',
+        ts: 'TERM. LAPA'
+    },
+    {
+        cl: 34041,
+        lc: false,
+        lt: '8000',
+        sl: 2,
+        tl: 10,
+        tp: 'PÇA. RAMOS DE AZEVEDO',
+        ts: 'TERM. LAPA'
+    },
+    {
+        cl: 34041,
+        lc: false,
+        lt: '8000',
+        sl: 2,
+        tl: 10,
+        tp: 'PÇA. RAMOS DE AZEVEDO',
+        ts: 'TERM. LAPA'
+    },
+    {
+        cl: 34041,
+        lc: false,
+        lt: '8000',
+        sl: 2,
+        tl: 10,
+        tp: 'PÇA. RAMOS DE AZEVEDO',
+        ts: 'TERM. LAPA'
     }
 ]
 

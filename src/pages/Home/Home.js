@@ -12,7 +12,7 @@ import Footer from '../../components/Footer/Footer';
 class Home extends Component {
   render() {
     return (
-      <Fragment>
+      <main className='Home'>
         <Hero />
         <Features />
         <About />
@@ -20,7 +20,7 @@ class Home extends Component {
         <HowItWorks/>
         <Contact/>
         <Footer/>
-      </Fragment>
+      </main>
     );
   }
 }
