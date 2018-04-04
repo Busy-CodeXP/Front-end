@@ -67,7 +67,6 @@ svg{
         a:hover{
           color: #8DDEFF;
         }
-  
     }
   
   }
@@ -106,10 +105,13 @@ svg{
           }
         }
 
-        li:first-of-type a{
-        }
-
       }
+    }
+  }
+
+  .Dashboard{
+    .closeMenu{
+      display: none;
     }
   }
 }
