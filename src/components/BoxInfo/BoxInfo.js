@@ -8,7 +8,7 @@ const BoxInfo = ({title,count,porcent}) => {
     <div className="BoxInfo">
       <h3>{title}</h3>
       <p>{count}<span>{porcent && "%"}</span></p>
-      <ProgressBar completed = {porcent}/>
+      {porcent && <ProgressBar completed = {porcent}/>}
     </div>
   );
 };
