@@ -26,6 +26,7 @@ class Navbar extends Component {
                     {this.props.navImage}
                 </div>
                 <ul className='Navbar-list'>
+                    <div className='closeMenu' onClick={this.openMenu}>&#10006;</div>
                     {this.props.children}
                 </ul>
             </nav>

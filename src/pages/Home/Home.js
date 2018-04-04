@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import Hero from '../../components/Hero';
 import Features from '../../components/Features/Features';
 import About from '../../components/About/About';

@@ -40,6 +40,10 @@
       display: flex;
       margin-top: 40px;
       justify-content: center;
+
+      a.Button{
+        text-decoration: none;
+      }
     }
 
     .Button.default:hover{
