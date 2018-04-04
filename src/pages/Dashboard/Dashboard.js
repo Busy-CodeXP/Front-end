@@ -104,7 +104,6 @@ class Dashboard extends Component {
     const {
       busLinha
     } = this.state
-    console.log('buslinha',busLinha ? `${busLinha.lt} - ${busLinha.tl}` : 'coco');
     return (
       <div className='Dashboard'>
         <Header background='#0893C3' burger={nav}>
@@ -117,15 +116,13 @@ class Dashboard extends Component {
         </Header>
 
         
-          {busLinha ? (
+          {busLinha.cl !== undefined ? (
             <BusInfo
               linha={`${busLinha.lt} - ${busLinha.tl}`}
               trajeto={`${busLinha.ts} / ${busLinha.tp}`}
             />
-            
           ) : (
-            <div>sdasd</div>
-            
+            <BusInfo/>
           )}
           
 
@@ -141,8 +138,8 @@ class Dashboard extends Component {
             count={this.state.onibus.capacidade}
           />
           <BoxInfo
-            title='Wheelchair'
-            count={this.state.onibus.a ? 'TRUE' : 'FALSE'}
+            title='Acessibilidade'
+            count={this.state.onibus.a === true ? 'Possui' : 'Não Possui'}
           />
         </section>
 
