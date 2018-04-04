@@ -1,39 +1,43 @@
 .Dashboard{
-  .Navbar-list{
+  .Navbar{
+    position: initial;
     
-    
-    .list-item-bus{
-      // border-top: 1px solid rgba(255,255,255,.3);
-      border-bottom: 1px solid rgba(255,255,255,.3);
-      padding: 10px;  
-      cursor: pointer; 
-      text-align: justify;
+    .Navbar-list{
       
-      span{
-        color: #fff;
+      
+      .list-item-bus{
+        // border-top: 1px solid rgba(255,255,255,.3);
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        padding: 10px;  
+        cursor: pointer; 
+        text-align: justify;
+        
+        span{
+          color: #fff;
+        }
+
+        span:first-of-type{
+          font-weight: bold;
+          font-size: 14px;
+        }
+
+        span:last-of-type{
+          font-size: 12px;
+        }
+    
+        p:first-of-type{
+          font-size: 20px;
+        }
+        p{
+          font-size: 12px;
+          margin: 10px;
+          color: #fff;
+        }
       }
 
-      span:first-of-type{
-        font-weight: bold;
-        font-size: 14px;
+      .list-item-bus:hover{
+        background: rgba(255,255,255,.2);
       }
-
-      span:last-of-type{
-        font-size: 12px;
-      }
-  
-      p:first-of-type{
-        font-size: 20px;
-      }
-      p{
-        font-size: 12px;
-        margin: 10px;
-        color: #fff;
-      }
-    }
-
-    .list-item-bus:hover{
-      background: rgba(255,255,255,.2);
     }
   }
 }
