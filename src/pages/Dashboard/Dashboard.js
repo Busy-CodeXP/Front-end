@@ -139,7 +139,7 @@ class Dashboard extends Component {
           />
           <BoxInfo
             title='Acessibilidade'
-            count={this.state.onibus.a === true ? 'Possui' : 'Não Possui'}
+            count={this.state.onibus.a === true ? 'Possui' : this.state.onibus.a === false ? 'Não Possui':''}
           />
         </section>
 
