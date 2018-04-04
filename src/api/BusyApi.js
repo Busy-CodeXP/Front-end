@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-export const api = "http://bc989699.ngrok.io/api/OlhoVivo";
+export const api = "http://8c2fa6b6.ngrok.io/api/OlhoVivo";
 
 export const getLinhas = (param) =>
   axios.get(`${api}/buscaLinha?buscaLinha=${param}`)
