@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://github.com/Busy-CodeXP/Front-end"><img src="https://raw.githubusercontent.com/Busy-CodeXP/Front-end/master/src/images/busyLogo.png" alt="Busy" width="200"></a>
+  <a href="https://github.com/Busy-CodeXP/Front-end"><img src="https://raw.githubusercontent.com/Busy-CodeXP/Front-end/master/src/images/busy-logo.png" alt="Busy" width="200"></a>
   <br>
   Busy
   <br>
