@@ -7,6 +7,14 @@ import DownloadIcon from './../Icon';
 import './styles/Hero.scss';
 
 class Hero extends Component {
+
+  closeMenu = () => {
+    if (this.header) {
+      console.log(this.header)
+      this.header.getNavbar().closeMenu()
+    }
+  }
+
   render() {
     const nav = <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width='40px' height='40px'>
       <g>
@@ -18,9 +26,9 @@ class Hero extends Component {
 
     return (
       <section className='Hero'>
-        <Header titleLogo='BUSY' burger={nav}>
+        <Header ref={(header) => this.header = header} titleLogo='BUSY' burger={nav}>
           <Link to='/dashboard'>Dashboard</Link>
-          <a href='#Features'>Funcionalidades</a>
+          <a href='#Features' onClick={this.closeMenu}>Funcionalidades</a>
           <a href='#About'>Sobre</a>
           <a href='#HowItWorks'>Como Funciona</a>
           <a href='#Contact'>Contato</a>
