@@ -27,7 +27,7 @@ class Hero extends Component {
     return (
       <section className='Hero'>
         <Header ref={(header) => this.header = header} titleLogo='BUSY' burger={nav}>
-          <Link to='/dashboard'>Dashboard</Link>
+          <Link to='/Front-end/dashboard'>Dashboard</Link>
           <a href='#Features' onClick={this.closeMenu}>Funcionalidades</a>
           <a href='#About'>Sobre</a>
           <a href='#HowItWorks'>Como Funciona</a>
