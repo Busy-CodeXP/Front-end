@@ -18,6 +18,11 @@ class Navbar extends Component {
         }
     }
 
+    closeMenu = () => {
+        document.body.classList.remove('scroll')
+        this.setState(state => ({ click: false }))
+    }
+
     render() {
         let burgerMenu = `Navbar ${this.state.click ? 'menuActive' : ''}`
         return (
@@ -34,4 +39,4 @@ class Navbar extends Component {
     }
 }
 
-export default Navbar
+export default Navbar;

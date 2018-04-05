@@ -83,6 +83,13 @@ class Dashboard extends Component {
     })
   }
 
+  closeMenu = () => {
+    if (this.header) {
+      console.log(this.header)
+      this.header.getNavbar().closeMenu()
+    }
+  }
+
   render() {
     const nav = <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Capa_1" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 485.213 485.213">
       <g>
@@ -93,7 +100,7 @@ class Dashboard extends Component {
 
     const items = this.state.listaLinhas && this.state.listaLinhas.map(
       (item, index) =>
-        <NavbarList key={index} className='list-item-bus' >
+        <NavbarList onClick={this.closeMenu} key={index} className='list-item-bus' >
           <div onClick={() => {this.handleClick(item.cl); this.busInfo(item)}}  >
             <span>{item.lt}-{item.tl} &#10144; {item.sl === 1 ? `${item.tp}` : `${item.ts}`}</span>
             <br />
@@ -106,7 +113,7 @@ class Dashboard extends Component {
     } = this.state
     return (
       <div className='Dashboard'>
-        <Header background='#0893C3' burger={nav}>
+        <Header ref={(header) => this.header = header} background='#0893C3' burger={nav}>
           <input className='search'
             placeholder="procura ae"
             ref={input => this.search = input}

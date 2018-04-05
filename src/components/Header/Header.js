@@ -5,6 +5,11 @@ import Navbar from '../../components/Navbar';
 import './styles/Header.scss';
 
 class Header extends Component {
+  getNavbar = () => {
+    console.log(this.navbar)
+    return this.navbar
+  }
+
   render() {
     const styles = {
       bgColor: {
@@ -24,7 +29,7 @@ class Header extends Component {
             <Logo />
           </div>
         }
-        <Navbar navImage={burger}>
+        <Navbar ref={(navbar) => this.navbar = navbar} navImage={burger}>
           {children}
         </Navbar>
       </header>
