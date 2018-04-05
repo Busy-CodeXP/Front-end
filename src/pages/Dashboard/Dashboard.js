@@ -77,7 +77,6 @@ class Dashboard extends Component {
   }
 
   busInfo = (linha) => {
-    console.log('linha',linha)
     this.setState({
       busLinha: linha
     })
@@ -85,7 +84,6 @@ class Dashboard extends Component {
 
   closeMenu = () => {
     if (this.header) {
-      console.log(this.header)
       this.header.getNavbar().closeMenu()
     }
   }

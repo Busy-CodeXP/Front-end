@@ -6,7 +6,6 @@ import './styles/Header.scss';
 
 class Header extends Component {
   getNavbar = () => {
-    console.log(this.navbar)
     return this.navbar
   }
 
