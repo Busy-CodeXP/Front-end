@@ -1,4 +1,69 @@
 .Hero{
-  height: 500px;
-  background:linear-gradient(to top, #028cc0, #fff);
+  background:linear-gradient(to bottom right, #5f3fff, #8DDEFF);  
+
+  .slogan-container{
+    padding: 50px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+
+    img{
+      display: none;
+    }
+  }
+
+  .slogan{
+    width: 400px;
+    display: inline-block;
+
+    .title{
+      font-size: 90px;
+      color: #fff;
+      
+    }
+
+    .subTitle{
+      font-weight: normal;
+      color: #fff;
+      font-size: 25px;
+      
+    }
+
+    p{
+      line-height: 1.5;
+      color: #fff;
+      margin-top: 20px;
+    }
+
+    .buttons{
+      display: flex;
+      margin-top: 40px;
+      justify-content: center;
+
+      a.Button{
+        text-decoration: none;
+      }
+    }
+
+    .Button.default:hover{
+      box-shadow:1px 2px 10px 4px rgba(50,50,50,.3);      
+    }
+  }
+}
+
+@media (min-width:768px){
+  .Hero{
+    .slogan-container{
+      img{
+        display: block;
+      }
+    }
+
+    .slogan{
+      .buttons{
+        justify-content: initial;
+      }
+    }
+  }
 }

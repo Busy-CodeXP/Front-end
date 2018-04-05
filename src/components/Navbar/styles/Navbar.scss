@@ -1,33 +1,118 @@
-$blue:#028cc0;
-$lightBlue:#3dbae5;
+.scroll{
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
 
-.Navbar{
+svg{
+  cursor: pointer;
+  position: relative;
   
-  &-list{
-    display: flex;
-    list-style-type: none;
+}
 
+.menuActive{
+  .Navbar-list{
+    margin: 0;
+    box-shadow: -5px 0px 25px rgba(80,80,80,.5);
     
-    li{
+  }
+}
 
-      a{
-        text-decoration: none;
-        color: $blue;
-        padding: 10px 20px;
-        transition: .3s;
-        
+.search{
+  width: 85%;
+  margin: 20px;
+  padding: 5px 10px;
+  outline: none;
+}
+
+  .Navbar{
+    position: relative;
+    top: 10px;
+    right: -10px;
+    
+    &-list{
+      list-style-type: none;
+      width: 270px;
+      margin: 0;
+      margin-right: -270px;
+      position: fixed;
+      top: 0px;
+      right: 0;
+      height: 100%;
+      transition: .5s;
+      text-align: right;
+      background: linear-gradient(to bottom, #0893c3, #8ddeff);
+      padding: 0;    
+      padding-top: 80px;
+      z-index: 1;
+
+        .closeMenu{
+          position: absolute;
+          top: 0;
+          padding: 20px;
+          color: #fff;
+          font-size: 20px;
+          cursor: pointer;
+        }
+  
+        a{
+          text-decoration: none;
+          color: #fff;
+          transition: .3s;
+          display: block;
+          padding: 20px;
+          font-size: 16px;
+        }
+  
+        a:hover{
+          color: #8DDEFF;
+        }
+    }
+  
+  }
+
+
+@media(min-width:1024px){
+  .Home{
+    .Navbar{
+      top: 0;
+      right: -40px;
+
+      svg{
+        display: none;
       }
 
-      a:hover{
-        color:$lightBlue;
-      }
+      &-list{
+        list-style-type: none;
+        width: auto;
+        height: auto;
+        position: initial;
+        margin: 0;
+        transition: .5s;
+        text-align: right;
+        background: none;
+        padding: 0;    
+        display: flex;
 
-      a:after{
-        content: '';
-        height: 2px;
-        background: $lightBlue;
+        .closeMenu{
+          display: none;
+        }
+
+        li{
+          a{
+            padding: 15px 10px;
+            font-size: 14px;
+          }
+        }
+
       }
     }
   }
 
+  .Dashboard{
+    .closeMenu{
+      display: none;
+    }
+  }
 }

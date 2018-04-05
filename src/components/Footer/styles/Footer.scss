@@ -1,0 +1,30 @@
+.Download{
+  padding: 20px 5%;
+  background: #283033;
+  text-align: center;
+
+  p{
+    color: #fff;
+  }
+
+  .googlePlay{
+    background: linear-gradient(to bottom right, #8ddeff, #0893c3);
+    margin:20px auto;
+    border: 0;
+    p{
+      color: #283033;
+      font-size: 12px;
+      span{
+        font-size: 15px;
+        color: #283033;
+      }
+    }
+  }
+
+  .copyright{
+    color: #aaa;
+    font-size: 10px;
+    width: 100%;
+  }
+
+}

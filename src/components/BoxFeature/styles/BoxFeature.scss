@@ -1,0 +1,23 @@
+.BoxFeature {
+  width: 250px;
+  text-align: center;
+  padding: 30px;
+  transition: box-shadow .5s;
+  
+  h3 {
+    color: #5f3fff;
+    font-size: 16px;
+    margin: 10px 0;
+  }
+  p {
+    line-height: 1.5
+  }
+}
+
+@media(min-width:1024px){
+  .BoxFeature{
+    &:hover{
+      box-shadow:0px 0px 20px 0px rgba(0,0,0,.2);
+    }
+  }
+}
