@@ -6,19 +6,19 @@ const MyMapComponent = compose(
   withProps({
     googleMapURL: "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%` }} />,
-    containerElement: <div style={{ height: `430px` }} />,
+    containerElement: <div style={{ height: `60vh` }} />,
     mapElement: <div style={{ height: `100%` }} />,
   }),
   withScriptjs,
   withGoogleMap
 )((props) =>
   <GoogleMap
-    defaultZoom={17}
+    defaultZoom={13}
     defaultCenter={{ lat: -23.536427, lng: -46.646293 }}
   >
     {props.dados ? props.dados.map((post, i) =>
       <Marker position={{ lat: post.py, lng: post.px }} key={i} onClick={()=>props.vaila(post)}/>
-    ) : console.log("ASDASDFAS")}
+    ) : <div/>}
     {/* {props.isMarkerShown && <Marker position={{ lat: -23.536427, lng: -46.64629 }} onClick={props.onMarkerClick} />} */}
   </GoogleMap>
 )
