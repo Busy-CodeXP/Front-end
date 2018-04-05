@@ -8,6 +8,7 @@ import Header from '../../components/Header';
 import BusInfo from '../../components/BusInfo/BusInfo';
 import GoogleMaps from '../../components/GoogleMaps/GoogleMaps';
 import './styles/Dashboard.scss';
+import Loading from '../../components/loading/Loading';
 
 
 class Dashboard extends Component {
@@ -99,7 +100,7 @@ class Dashboard extends Component {
     const items = this.state.listaLinhas && this.state.listaLinhas.map(
       (item, index) =>
         <NavbarList onClick={this.closeMenu} key={index} className='list-item-bus' >
-          <div onClick={() => {this.handleClick(item.cl); this.busInfo(item)}}  >
+          <div onClick={() => { this.handleClick(item.cl); this.busInfo(item) }}  >
             <span>{item.lt}-{item.tl} &#10144; {item.sl === 1 ? `${item.tp}` : `${item.ts}`}</span>
             <br />
             <span>{item.ts} / {item.tp}</span>
@@ -116,20 +117,23 @@ class Dashboard extends Component {
             placeholder="procura ae"
             ref={input => this.search = input}
             onChange={this.handleInputChange}
-            />
+          />
+
+          <Loading />
+
           {items}
         </Header>
 
-        
-          {busLinha.cl !== undefined ? (
-            <BusInfo
-              linha={`${busLinha.lt} - ${busLinha.tl}`}
-              trajeto={`${busLinha.ts} / ${busLinha.tp}`}
-            />
-          ) : (
-            <BusInfo/>
+
+        {busLinha.cl !== undefined ? (
+          <BusInfo
+            linha={`${busLinha.lt} - ${busLinha.tl}`}
+            trajeto={`${busLinha.ts} / ${busLinha.tp}`}
+          />
+        ) : (
+            <BusInfo />
           )}
-          
+
 
 
         <section className='Dashboard-BoxInfo'>
@@ -144,9 +148,10 @@ class Dashboard extends Component {
           />
           <BoxInfo
             title='Acessibilidade'
-            count={this.state.onibus.a === true ? 'Possui' : this.state.onibus.a === false ? 'Não Possui':''}
+            count={this.state.onibus.a === true ? 'Possui' : this.state.onibus.a === false ? 'Não Possui' : ''}
           />
         </section>
+
 
         <GoogleMaps data={this.state.todosOnibusLinha} algumacoisa={this.getOnibus} />
 
