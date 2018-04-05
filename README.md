@@ -22,7 +22,7 @@ No nosso site você poderá ver links para download do aplicativo e dashboard co
 </p>
 
 ## 🎮 Demonstração
-⚠️*EM BREVE*⚠️
+![Busy em ação](https://github.com/Busy-CodeXP/Front-end/blob/master/src/images/Busy.gif?raw=true)
 
 ## 💻 Telas
 ⚠️*EM BREVE*⚠️
