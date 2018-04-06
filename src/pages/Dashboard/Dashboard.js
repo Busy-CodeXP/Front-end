@@ -122,7 +122,7 @@ class Dashboard extends Component {
             onChange={this.handleInputChange}
           />
 
-          {loading && listaLinhas.length == 0 ? <Loading/> : items}
+          {loading && listaLinhas.length === 0 ? <Loading/> : items}
           {/* {items.length > 0 ? items : <Loading/>} */}
         </Header>
 
