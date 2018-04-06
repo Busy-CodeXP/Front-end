@@ -3,8 +3,8 @@ import React from 'react';
 
 const Loading = () => {
   return (
-    <svg width="44" height="44" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" stroke="#000">
-      <g fill="none" fillRule="evenodd" strokeWidth="2">
+    <svg className='loading' width="100" height="100" viewBox="0 0 44 44" xmlns="http://www.w3.org/2000/svg" stroke="#fff">
+      <g fill="none" fillRule="evenodd" strokeWidth="1">
         <circle cx="22" cy="22" r="1">
           <animate attributeName="r"
             begin="0s" dur="1.8s"

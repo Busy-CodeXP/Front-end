@@ -55,6 +55,13 @@ svg{
           font-size: 20px;
           cursor: pointer;
         }
+
+        .loading{
+          position: relative;
+          right: 50%;
+          top: 5%;
+          transform: translateX(50%);
+        }
   
         a{
           text-decoration: none;
