@@ -8,7 +8,7 @@ import Header from '../../components/Header';
 import BusInfo from '../../components/BusInfo/BusInfo';
 import GoogleMaps from '../../components/GoogleMaps/GoogleMaps';
 import './styles/Dashboard.scss';
-import Loading from '../../components/loading/Loading';
+import Loading from '../../components/Loading/Loading';
 
 
 class Dashboard extends Component {
@@ -18,9 +18,9 @@ class Dashboard extends Component {
     codigoLinha: '',
     todosOnibusLinha: {},
     onibus: {},
-    busLinha: {}
+    busLinha: {},
+    loading: false
   }
-
 
 
   getOnibus = (param) => {
@@ -54,15 +54,18 @@ class Dashboard extends Component {
 
   handleInputChange = () => {
     this.setState({
-      inputText: this.search.value
+      inputText: this.search.value,
     }, () => {
-      if (this.state.inputText.length >= 3) {
+      if (this.state.inputText.length >= 4) {
+        this.setState({loading:true})
         setTimeout(() => {
-          this.getLinha()
+          this.getLinha();          
         }, 500);
+        
       } else {
         this.setState({
-          listaLinhas: []
+          listaLinhas: [],
+          loading:false
         })
       }
     })
@@ -108,20 +111,19 @@ class Dashboard extends Component {
         </NavbarList>
     )
     const {
-      busLinha
+      busLinha, loading, listaLinhas
     } = this.state
     return (
       <div className='Dashboard'>
         <Header ref={(header) => this.header = header} background='#0893C3' burger={nav}>
           <input className='search'
-            placeholder="procura ae"
+            placeholder="Pesquise sua linha"
             ref={input => this.search = input}
             onChange={this.handleInputChange}
           />
 
-          <Loading />
-
-          {items}
+          {loading && listaLinhas.length === 0 ? <Loading/> : items}
+          {/* {items.length > 0 ? items : <Loading/>} */}
         </Header>
 
 

@@ -10,7 +10,6 @@ class Hero extends Component {
 
   closeMenu = () => {
     if (this.header) {
-      console.log(this.header)
       this.header.getNavbar().closeMenu()
     }
   }
@@ -29,10 +28,10 @@ class Hero extends Component {
         <Header ref={(header) => this.header = header} titleLogo='BUSY' burger={nav}>
           <Link to='/Front-end/dashboard'>Dashboard</Link>
           <a href='#Features' onClick={this.closeMenu}>Funcionalidades</a>
-          <a href='#About'>Sobre</a>
-          <a href='#HowItWorks'>Como Funciona</a>
-          <a href='#Contact'>Contato</a>
-          <a href='#Download'>Download</a>
+          <a href='#About' onClick={this.closeMenu}>Sobre</a>
+          <a href='#HowItWorks' onClick={this.closeMenu}>Como Funciona</a>
+          <a href='#Contact' onClick={this.closeMenu}>Contato</a>
+          <a href='#Download' onClick={this.closeMenu}>Download</a>
         </Header>
 
         <div className="slogan-container">
