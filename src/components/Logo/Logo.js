@@ -6,7 +6,7 @@ import './styles/Logo.scss';
 
 const BusyLogo = () => {
         return (
-            <Link to='/'><img src={Logo} className='BusyLogo' alt="Logo" /></Link>
+            <Link to='/Front-end/'><img src={Logo} className='BusyLogo' alt="Logo" /></Link>
         )
 }
 
