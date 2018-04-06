@@ -13,7 +13,6 @@ No nosso site você poderá ver links para download do aplicativo e dashboard co
 
 <p align="center">
   <a href="#-demonstra%C3%A7%C3%A3o">Demonstração</a> •
-  <a href="#-telas">Telas</a> •
   <a href="#%EF%B8%8F-configura%C3%A7%C3%A3o-do-ambiente-de--desenvolvimento">Ambiente de desenvolvimento</a> •
   <a href="#-estrutura-do-projeto">Estrutura do projeto</a> •
   <a href="#%EF%B8%8F-configura%C3%A7%C3%B5es">Configurações</a> •
@@ -21,11 +20,8 @@ No nosso site você poderá ver links para download do aplicativo e dashboard co
   <a href="#-time">Time</a>
 </p>
 
-## 🎮 Demonstração
+## 💻 Demonstração
 ![Busy em ação](https://github.com/Busy-CodeXP/Front-end/blob/master/src/images/Busy.gif?raw=true)
-
-## 💻 Telas
-⚠️*EM BREVE*⚠️
 	
 ## ⚛️ Configuração do ambiente de  desenvolvimento
 ### Requisitos
