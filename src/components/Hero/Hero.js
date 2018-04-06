@@ -5,7 +5,7 @@ import Button from '../Button';
 import Header from '../Header';
 import DownloadIcon from './../Icon';
 import './styles/Hero.scss';
-
+import splash from'../../images/splash.png'
 class Hero extends Component {
 
   closeMenu = () => {
@@ -50,7 +50,7 @@ class Hero extends Component {
             </div>
           </div>
 
-          <img src="http://via.placeholder.com/250x450" alt='' />
+          <img src={splash} style={{width:'260px',height:'450px',objectFit: 'contain'}} alt='Splash screen do celular' />
 
         </div>
 

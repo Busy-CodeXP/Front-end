@@ -2,6 +2,11 @@ import React, { Component } from 'react';
 
 import Title from '../Title';
 import BoxFeature from '../BoxFeature';
+import rating from '../../images/rating.svg';
+import people from '../../images/people.svg';
+import disabled from '../../images/disabled.svg';
+import mapa from '../../images/mapa.png';
+
 import './styles/Features.scss'
 
 class Features extends Component {
@@ -15,21 +20,21 @@ class Features extends Component {
           <BoxFeature
             title="Lotação"
             description="Informar a estimativa de lotação do próximo ônibus da linha que chegará mais rápido ao ponto de ônibus."
-            image="http://via.placeholder.com/130x130"
+            image={people}
           />
           <BoxFeature
             title="Feedback"
             description="Envie-nos um feedback sobre sua experiência em suas viagens ou no uso do app."
-            image="http://via.placeholder.com/130x130"
+            image={rating}
           />
           <BoxFeature
-            title="Lorem ipsum dolor"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
-            image="http://via.placeholder.com/130x130"
+            title="Acessibilidade"
+            description="Com nosso aplicativo é possível saber se o ônibus possui acessibilidade ou não."
+            image={disabled}
           />
         </div>
 
-        <img className='image' src="http://via.placeholder.com/500x130" alt=""/>
+        <img className='image' src={mapa} alt=""/>
       </section>
     )
   }

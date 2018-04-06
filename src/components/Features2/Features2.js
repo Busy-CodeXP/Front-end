@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Title from '../Title';
 import CardInfo from '../CardInfo/CardInfo';
+import route from '../../images/route.svg'
 import './styles/Features2.scss'
 
 class Features2 extends Component {
@@ -20,7 +21,7 @@ class Features2 extends Component {
             <CardInfo
               title="Melhores rotas"
               description="Escolhe automaticamente as melhores rotas para o seu destino otimizando seu percurso"
-              image="http://via.placeholder.com/70x70"
+              image={route}
             />
             <CardInfo
               title="Anti pânico"
