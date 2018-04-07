@@ -37,18 +37,18 @@ class About extends Component {
             principalmente em ônibus.
           </p>
           <p className='text'>
-            O Busy app vem com uma proposta de melhorar o conforto do usuário dando a ele a possibilidade de escolha entre os ônibus de acordo com seu nível de lotação. 
+            O Busy app vem com uma proposta de melhorar o conforto do usuário dando a ele a possibilidade de escolha entre os ônibus de acordo com seu nível de lotação.
           </p>
 
 
-
-          <Button className="googlePlay">
-            <AndroidIcon fill='#283033' />
-            <p>Available on the <br /> <span>Google Play</span></p>
-          </Button>
+          <a style={{ textDecoration: 'none' }} href='https://drive.google.com/uc?id=17YXbLinHvHMmreER2M1PEtCsYHWh9fOj&export=download'>
+            <Button className="googlePlay">
+              <AndroidIcon fill='#283033' />
+              <p>Available on the <br /> <span>Google Play</span></p>
+            </Button>
+          </a>
         </section>
-
-        <img src={iPhoneX} style={{objectFit:'contain', margin:'0 50px'}} alt="" />
+        <img src={iPhoneX} style={{ objectFit: 'contain', margin: '0 50px' }} alt="" />
       </div>
     )
   }

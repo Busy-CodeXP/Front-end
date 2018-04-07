@@ -41,9 +41,11 @@ class Hero extends Component {
             <p>Mude a forma de se transportar em Sampa. Otimize suas rotas e tenha mais conforto. Com o nosso aplicativo, a espera por ônibus se torna mais atraente.</p>
 
             <div className="buttons">
+              <a style={{textDecoration:'none'}} href='https://drive.google.com/uc?id=17YXbLinHvHMmreER2M1PEtCsYHWh9fOj&export=download'> 
               <Button className='default'>
                 <DownloadIcon fill='#FFF' /> DOWNLOAD
               </Button>
+              </a>
 
               <a href='#About' className='Button'>LEARN MORE</a>
             </div>

@@ -115,7 +115,7 @@ class Dashboard extends Component {
     } = this.state
     return (
       <div className='Dashboard'>
-        <Header ref={(header) => this.header = header} background='#0893C3' burger={nav}>
+        <Header ref={(header) => this.header = header} background='linear-gradient(to bottom right, #5f3fff, #8DDEFF)' burger={nav}>
           <input className='search'
             placeholder="Pesquise sua linha"
             ref={input => this.search = input}
