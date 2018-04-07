@@ -7,7 +7,8 @@ import notification from '../../images/notification.svg'
 import danger from '../../images/danger.svg'
 import card from '../../images/card.svg'
 import robot from '../../images/robot.svg'
-import wheelchair from '../../images/wheelchair.svg'
+import wheelchair from '../../images/wheelchair.svg';
+import iphoneX from '../../images/iPhoneX.png'
 import './styles/Features2.scss'
 
 class Features2 extends Component {
@@ -40,7 +41,7 @@ class Features2 extends Component {
             />
           </div>
 
-          <img className='image' src="http://via.placeholder.com/250x450" alt="" />
+          <img className='image' src={iphoneX} alt="" />
 
           <div className="Features2-CardInfo">
             <CardInfo
