@@ -5,6 +5,7 @@ import Button from '../Button';
 import { AndroidIcon } from './../Icon';
 import './styles/About.scss'
 import Title from '../Title/Title';
+import iPhoneX from '../../images/iPhoneX.png'
 
 class About extends Component {
   render() {
@@ -47,7 +48,7 @@ class About extends Component {
           </Button>
         </section>
 
-        <img src="http://via.placeholder.com/300x500" alt="" />
+        <img src={iPhoneX} style={{objectFit:'contain', margin:'0 50px'}} alt="" />
       </div>
     )
   }

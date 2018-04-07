@@ -49,7 +49,7 @@ class Hero extends Component {
             </div>
           </div>
 
-          <img src={splash} style={{width:'260px',height:'450px',objectFit: 'contain'}} alt='Splash screen do celular' />
+          <img src={splash} style={{width:'350px'}} alt='Splash screen do celular' />
 
         </div>
 

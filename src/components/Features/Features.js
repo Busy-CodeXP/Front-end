@@ -5,7 +5,7 @@ import BoxFeature from '../BoxFeature';
 import rating from '../../images/rating.svg';
 import people from '../../images/people.svg';
 import disabled from '../../images/disabled.svg';
-import mapa from '../../images/mapa.png';
+import deited from '../../images/deited.png';
 
 import './styles/Features.scss'
 
@@ -34,7 +34,7 @@ class Features extends Component {
           />
         </div>
 
-        <img className='image' src={mapa} alt=""/>
+        <img className='image' src={deited} style={{width:'700px'}} alt=""/>
       </section>
     )
   }
