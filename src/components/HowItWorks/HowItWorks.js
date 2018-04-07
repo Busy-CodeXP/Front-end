@@ -2,8 +2,12 @@ import React, { Component } from 'react';
 
 import Title from '../Title';
 import CardInfo from '../CardInfo/CardInfo';
-import './styles/HowItWorks.scss';
 import layers from '../../images/layers.png'
+import search from '../../images/search.svg';
+import list from '../../images/list.svg';
+import favorites from '../../images/favorites.svg';
+
+import './styles/HowItWorks.scss'
 
 class HowItWorks extends Component {
   render() {
@@ -15,28 +19,28 @@ class HowItWorks extends Component {
         <div className="HowItWorks-container">
           <div className="HowItWorks-inner">
             <div className="HowItWorks-inner-description">
-              <h3>Lorem ipsum dolor sit amet</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus culpa dolorem aliquid sequi modi magni veniam doloribus omnis autem asperiores?</p>
+              <h3>Veja como funciona</h3>
+              <p>Aqui temos um pequeno resumo das funcionalidades principais do nosso App</p>
             </div>
 
             <div className="HowItWorks-inner-CardInfo">
               <CardInfo
                 inverse='inverse'
-                title="Lorem ipsum dolor"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
-                image="http://via.placeholder.com/60x60"
+                title="Procure"
+                description="Faça a busca da linha de seu ônibus em tempo real, sabendo a lotação e quais veiculos estão em circulação na linha."
+                image={search}
               />
               <CardInfo
                 inverse='inverse'
-                title="Lorem ipsum dolor"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
-                image="http://via.placeholder.com/60x60"
+                title="Liste"
+                description="Listando as linhas iremos apresentar todos os ônibus que estão rodando naquela linha até o momento."
+                image={list}
               />
               <CardInfo
                 inverse='inverse'
-                title="Lorem ipsum dolor"
-                description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
-                image="http://via.placeholder.com/60x60"
+                title="Avalie"
+                description="Seu feedback sobre o transporte é muito importante para nós, avalie para podermos reportar essas informações."
+                image={favorites}
               />
             </div>
           </div>

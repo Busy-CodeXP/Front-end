@@ -58,7 +58,7 @@ class Features2 extends Component {
             <CardInfo
               inverse='inverse'
               title="Acessibilidade"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pellentesque sem et nibh accumsan auctor."
+              description="Com nosso aplicativo é possível saber se o ônibus possui acessibilidade ou não."
               image={wheelchair}
             />
           </div>
