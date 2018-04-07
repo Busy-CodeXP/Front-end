@@ -5,7 +5,8 @@ import Button from '../Button';
 import { AndroidIcon } from './../Icon';
 import './styles/About.scss'
 import Title from '../Title/Title';
-import iPhoneX from '../../images/iPhoneX.png'
+import iPhoneX from '../../images/iPhoneX.png';
+import graphic from '../../images/graphic.PNG'
 
 class About extends Component {
   render() {
@@ -29,7 +30,7 @@ class About extends Component {
             evidenciando a falta de estrutura e o descontentamento da população.
           </p>
 
-          <img className='graphic' src="http://via.placeholder.com/200x200" alt="" />
+          <img className='graphic' src={graphic} alt="" />
 
           <p className='text'>
             Entre todas as reclamações voltadas ao transporte público, a lotação dos coletivos é a mais presente, somando um

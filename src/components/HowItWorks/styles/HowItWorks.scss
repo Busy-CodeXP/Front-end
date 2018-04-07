@@ -9,6 +9,7 @@
   &-container{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 
     .HowItWorks-inner{
       max-width: 450px;
@@ -41,10 +42,12 @@
   }
 }
 
-@media(min-width:768px){
+@media(min-width:1024px){
   .HowItWorks{
     .image{
       display: block;
+      height: 500px;
+      object-fit: contain;
     }
   }
 }

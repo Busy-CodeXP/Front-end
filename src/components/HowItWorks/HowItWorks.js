@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 import Title from '../Title';
 import CardInfo from '../CardInfo/CardInfo';
-import './styles/HowItWorks.scss'
+import './styles/HowItWorks.scss';
+import layers from '../../images/layers.png'
 
 class HowItWorks extends Component {
   render() {
@@ -40,7 +41,7 @@ class HowItWorks extends Component {
             </div>
           </div>
 
-          <img className='image' src="http://via.placeholder.com/350x500" alt="" />
+          <img className='image' src={layers} alt="" />
         </div>
 
       </section>
